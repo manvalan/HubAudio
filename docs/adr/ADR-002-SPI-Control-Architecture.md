@@ -23,18 +23,19 @@ audio transport interface.
 
 ## Decision
 
-The SPI architecture is divided into independent domains.
+The SPI architecture is divided into independent functional domains.
 
 The ESP32-S3 operates as the master of the system control SPI bus.
 
-The ADAU1467 and Si4684 expose SPI slave interfaces for external configuration.
+The ADAU1467 and Si4684 expose SPI slave interfaces for external
+configuration and control.
 
-Each device maintains its own internal SPI master domain for accessing local
-memories or peripherals.
+The internal management of each device remains under the responsibility of
+the device itself.
 
 ## Architecture
 
-System control bus:
+System control SPI domain:
 
             ESP32-S3
 
@@ -47,8 +48,10 @@ System control bus:
 
 SPI SLAVE          SPI SLAVE
 
+## ADAU1467 Configuration Domain
 
-ADAU1467 local memory:
+The ADAU1467 manages its own external configuration memory through its
+internal SPI master interface.
 
           ADAU1467
 
@@ -57,37 +60,57 @@ ADAU1467 local memory:
               |
 
           25AA1024
-      DSP Configuration Memory
 
+   DSP Program / Configuration Memory
 
-Si4684 local memory:
+The ESP32-S3 controls the ADAU1467 through the external SPI interface but
+does not directly access the DSP configuration memory during normal
+operation.
 
-           Si4684
+## Si4684 Firmware Domain
+
+The Si4684 firmware loading and configuration process is managed through
+commands exchanged on the external SPI control interface.
+
+           ESP32-S3
 
         SPI MASTER
 
               |
 
-      Firmware Memory
+           Si4684
 
+              |
+
+    Internal Firmware Loader
+
+              |
+
+         Internal RAM
+
+The ESP32-S3 controls the initialization process but does not directly access
+the internal operational memory of the Si4684.
 
 ## Consequences
 
 ### Positive
 
-- Clear ownership of every SPI bus
+- Clear ownership of every SPI interface
+- No bus contention between devices
 - Reduced electrical loading
-- Independent firmware management
-- Easier debugging
+- Independent device initialization
+- Easier debugging and validation
 
 ### Negative
 
-- Multiple SPI peripherals are required
-- Firmware coordination is required between domains
+- Multiple control interfaces are required
+- Firmware update procedures must coordinate different device domains
 
 ## Rationale
 
-The ESP32-S3 supervises the system but does not replace the internal
-controllers of specialized devices.
+The ESP32-S3 supervises the complete HubAudio system but does not replace the
+internal controllers of specialized devices.
 
 Each component remains responsible for its own functional domain.
+
+The control plane and the audio plane remain architecturally separated.
