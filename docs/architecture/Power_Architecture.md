@@ -40,7 +40,7 @@ Il dominio digitale alimenta esclusivamente i componenti di controllo.
 
 Comprende:
 
-- ESP32-S3
+- System Controller
 - EEPROM
 - GPIO Expander
 - Display

@@ -10,8 +10,8 @@ HubAudio integrates multiple digital audio sources and destinations:
 
 Sources:
 
-- ESP32-S3 streaming subsystem
-- Si4684 radio receiver
+- System Controller streaming subsystem
+- Radio Receiver radio receiver
 - Bluetooth receiver
 - Optical digital input
 
@@ -25,7 +25,7 @@ A deterministic and scalable digital audio routing architecture is required.
 
 ## Decision
 
-The ADAU1467 is the central routing element of the Audio Domain.
+The Audio Processor is the central routing element of the Audio Domain.
 
 Each major audio device is assigned to a dedicated serial audio interface.
 
@@ -35,36 +35,36 @@ The preferred architecture is:
 One audio device = One dedicated I2S interface
 
 
-The ADAU1467 operates as the audio timing reference.
+The Audio Processor operates as the audio timing reference.
 
 External audio devices operate as I2S slaves whenever supported.
 
 ## Audio Input Allocation
 
-| ADAU1467 Port | Device | Function |
+| Audio Processor Port | Device | Function |
 |---|---|---|
-| SDATA_IN0 | ESP32-S3 | Network audio stream |
-| SDATA_IN1 | Si4684 | Radio audio |
+| SDATA_IN0 | System Controller | Network audio stream |
+| SDATA_IN1 | Radio Receiver | Radio audio |
 | SDATA_IN2 | DECODEC | Optical digital input |
 | SDATA_IN3 | Bluetooth RX | Wireless audio input |
 
 
-ESP32-S3 --------
-Si4684 ---------
-DECODEC ----------+---- ADAU1467
+System Controller --------
+Radio Receiver ---------
+DECODEC ----------+---- Audio Processor
 BT RX ---------/
 
 
 ## Audio Output Allocation
 
-| ADAU1467 Port | Device | Function |
+| Audio Processor Port | Device | Function |
 |---|---|---|
 | SDATA_OUT0 | CODEC/DAC | Analog audio output |
 | SDATA_OUT1 | Bluetooth TX | Wireless audio output |
 | SDATA_OUT2 | ENCODEC | Optical digital output |
 | SDATA_OUT3 | Reserved | Future expansion |
 
-             ADAU1467
+             Audio Processor
 
                  |
     +------------+------------+
@@ -73,7 +73,7 @@ BT RX ---------/
 
 ## Clocking
 
-The ADAU1467 provides the master audio timing reference.
+The Audio Processor provides the master audio timing reference.
 
 The audio clock domain consists of:
 
@@ -105,4 +105,4 @@ domain.
 HubAudio prioritizes signal integrity, maintainability and deterministic
 audio behavior over maximum bus utilization.
 
-The ADAU1467 acts as the central audio router of the system.
+The Audio Processor acts as the central audio router of the system.

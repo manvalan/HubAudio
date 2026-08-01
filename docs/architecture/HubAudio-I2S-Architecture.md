@@ -10,7 +10,7 @@
 The HubAudio audio architecture is based on a centralized digital audio
 processing model.
 
-The ADAU1467 is the core audio processor and manages:
+The Audio Processor is the core audio processor and manages:
 
 - digital audio routing
 - DSP processing
@@ -18,7 +18,7 @@ The ADAU1467 is the core audio processor and manages:
 - synchronization
 - audio stream conversion
 
-All digital audio streams are connected to the ADAU1467 through serial audio
+All digital audio streams are connected to the Audio Processor through serial audio
 interfaces.
 
 The audio domain is independent from the system control domain.
@@ -26,7 +26,7 @@ The audio domain is independent from the system control domain.
 
 CONTROL DOMAIN
 
-ESP32-S3
+System Controller
 |
 |
 SPI
@@ -35,8 +35,8 @@ Configuration
 
 AUDIO DOMAIN
 
-ESP32-S3
-Si4684
+System Controller
+Radio Receiver
 BT RX
 Optical Input
 
@@ -44,7 +44,7 @@ Optical Input
   |
   v
 
-ADAU1467
+Audio Processor
 
   |
   |
@@ -58,7 +58,7 @@ Optical Output
 
 # 2. Audio Clock Master
 
-The ADAU1467 is the master of the audio timing domain.
+The Audio Processor is the master of the audio timing domain.
 
 The generated audio clock consists of:
 
@@ -70,7 +70,7 @@ The generated audio clock consists of:
 All external audio devices should operate as synchronized slaves whenever
 supported.
 
-             ADAU1467
+             Audio Processor
 
           AUDIO CLOCK MASTER
 
@@ -82,64 +82,64 @@ supported.
                 |
    +------------+------------+
    |            |            |
- Si4684       BT RX       CODEC
+ Radio Receiver       BT RX       CODEC
 
 ---
 
 # 3. Input Audio Interfaces
 
-The ADAU1467 provides multiple serial input ports.
+The Audio Processor provides multiple serial input ports.
 
 The HubAudio input allocation is:
 
 | ADAU Port | Source | Description |
 |-----------|--------|-------------|
-| SDATA_IN0 | ESP32-S3 | Network audio stream |
-| SDATA_IN1 | Si4684 | Radio receiver audio |
+| SDATA_IN0 | System Controller | Network audio stream |
+| SDATA_IN1 | Radio Receiver | Radio receiver audio |
 | SDATA_IN2 | DECODEC | Optical digital input |
 | SDATA_IN3 | Bluetooth RX | Wireless audio input |
 
 
-## ESP32-S3 Audio Input
+## System Controller Audio Input
 
-The ESP32-S3 acts as a digital audio source.
+The System Controller acts as a digital audio source.
 
 Its role inside the Audio Domain is equivalent to any other audio source.
 
 
-ESP32-S3
+System Controller
 
 I2S DATA OUT
 |
 |
 v
 
-ADAU1467 SDATA_IN0
+Audio Processor SDATA_IN0
 
 
-The ESP32-S3 does not control the audio timing.
+The System Controller does not control the audio timing.
 
-The timing is provided by the ADAU1467 clock domain.
+The timing is provided by the Audio Processor clock domain.
 
 
 ---
 
-## Si4684 Audio Input
+## Radio Receiver Audio Input
 
-The Si4684 provides decoded radio audio.
+The Radio Receiver provides decoded radio audio.
 
 
-Si4684
+Radio Receiver
 
 I2S DATA OUT
 |
 |
 v
 
-ADAU1467 SDATA_IN1
+Audio Processor SDATA_IN1
 
 
-The Si4684 is a peripheral of the audio domain.
+The Radio Receiver is a peripheral of the audio domain.
 
 It does not define the system audio clock.
 
@@ -166,7 +166,7 @@ I2S
   |
   |
 
-ADAU1467 SDATA_IN2
+Audio Processor SDATA_IN2
 
 
 The decoder must support operation synchronized with the HubAudio clock
@@ -190,7 +190,7 @@ I2S
   |
   |
 
-ADAU1467 SDATA_IN3
+Audio Processor SDATA_IN3
 
 
 The selected Bluetooth module must support external audio clock operation.
@@ -200,7 +200,7 @@ The selected Bluetooth module must support external audio clock operation.
 
 # 4. Output Audio Interfaces
 
-The ADAU1467 output allocation is:
+The Audio Processor output allocation is:
 
 | ADAU Port | Destination | Description |
 |-----------|-------------|-------------|
@@ -213,7 +213,7 @@ The ADAU1467 output allocation is:
 ## Analog Audio Output
 
 
-ADAU1467
+Audio Processor
 
 SDATA_OUT0
 
@@ -232,7 +232,7 @@ Analog Output
 ## Bluetooth Transmission Output
 
 
-ADAU1467
+Audio Processor
 
 SDATA_OUT1
 
@@ -251,7 +251,7 @@ Wireless Audio
 ## Optical Digital Output
 
 
-ADAU1467
+Audio Processor
 
 SDATA_OUT2
 
@@ -269,7 +269,7 @@ SPDIF Optical Output
 
 # 5. I2S Versus TDM Strategy
 
-The ADAU1467 supports multiple serial audio formats including:
+The Audio Processor supports multiple serial audio formats including:
 
 - I2S
 - Left Justified
@@ -325,5 +325,5 @@ The architecture reserves:
 - TDM expansion possibilities
 
 
-The ADAU1467 remains the central audio routing element for future HubAudio
+The Audio Processor remains the central audio routing element for future HubAudio
 versions.

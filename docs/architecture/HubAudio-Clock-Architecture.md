@@ -9,7 +9,7 @@
 
 The HubAudio architecture defines a centralized audio timing domain.
 
-The ADAU1467 is the master of the audio clock system.
+The Audio Processor is the master of the audio clock system.
 
 The purpose of this architecture is to provide a single timing reference for
 all digital audio devices, avoiding independent clock domains and minimizing
@@ -18,7 +18,7 @@ sample synchronization problems.
 The audio clock domain is composed of:
 
 - Master oscillator
-- ADAU1467 PLL and clock generation
+- Audio Processor PLL and clock generation
 - Clock distribution stage
 - Audio peripheral clock inputs
 
@@ -27,9 +27,9 @@ The audio clock domain is composed of:
 
 # 2. Audio Clock Master
 
-The ADAU1467 is responsible for generating the audio timing reference.
+The Audio Processor is responsible for generating the audio timing reference.
 
-The ADAU1467 provides:
+The Audio Processor provides:
 
 - DSP processing clock
 - Serial audio clock generation
@@ -43,7 +43,7 @@ Conceptually:
                 |
                 |
 
-           ADAU1467
+           Audio Processor
 
       DSP + Audio Clock Master
 
@@ -51,7 +51,7 @@ Conceptually:
 
          MCLK / BCLK / LRCLK
 
-The ADAU1467 is the timing authority of the Audio Domain.
+The Audio Processor is the timing authority of the Audio Domain.
 
 
 ---
@@ -91,9 +91,9 @@ Future support for 44.1 kHz family may require:
 
 # 4. Clock Distribution
 
-The ADAU1467 clock output is distributed through a dedicated clock buffer.
+The Audio Processor clock output is distributed through a dedicated clock buffer.
 
-The PCS2P2309NZ is used as clock distribution element.
+The Clock Buffer is used as clock distribution element.
 
 Its role is:
 
@@ -107,7 +107,7 @@ It does not generate the audio clock.
 
 Architecture:
 
-                ADAU1467
+                Audio Processor
 
              Audio Clock Master
 
@@ -117,7 +117,7 @@ Architecture:
 
                    |
 
-            PCS2P2309NZ
+            Clock Buffer
 
           Clock Distribution
 
@@ -125,7 +125,7 @@ Architecture:
       |            |            |
       |            |            |
 
-   Si4684       BT Modules    CODEC
+   Radio Receiver       BT Modules    CODEC
 
 ---
 
@@ -135,7 +135,7 @@ All digital audio peripherals belong to the same clock domain.
 
 Expected clock relationships:
 
-             ADAU1467
+             Audio Processor
 
                 |
 
@@ -147,7 +147,7 @@ Expected clock relationships:
 
 +------+------+------+------+
 | | | |
-ESP32 Si4684 BT RX CODEC
+ESP32 Radio Receiver BT RX CODEC
 
 
 
@@ -167,7 +167,7 @@ The audio data flow is independent from control communication.
 Control:
 
 
-ESP32-S3
+System Controller
 
 |
 |
@@ -176,7 +176,7 @@ SPI
 
 |
 
-ADAU1467 / Si4684
+Audio Processor / Radio Receiver
 
 
 
@@ -192,13 +192,13 @@ Source Device
   |
   |
 
-ADAU1467
+Audio Processor
 
 
 Timing:
 
 
-ADAU1467
+Audio Processor
 
   |
   |
@@ -266,8 +266,8 @@ Clock signals must always reference a continuous ground plane.
 The HubAudio clock architecture follows the same principle as a musical
 orchestra:
 
-The ADAU1467 is the conductor.
+The Audio Processor is the conductor.
 
-The PCS2P2309NZ distributes the beat.
+The Clock Buffer distributes the beat.
 
 All audio devices perform synchronized to the same timing reference.

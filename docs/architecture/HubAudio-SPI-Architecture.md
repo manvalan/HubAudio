@@ -26,7 +26,7 @@ The control architecture is based on independent SPI domains.
 
 CONTROL PLANE
 
-             ESP32-S3
+             System Controller
 
           System Controller
 
@@ -37,7 +37,7 @@ CONTROL PLANE
     +-----------+-----------+
     |                       |
 
-ADAU1467                Si4684
+Audio Processor                Radio Receiver
 
 Audio Processor Radio Receiver
 
@@ -45,9 +45,9 @@ Audio Processor Radio Receiver
 
 ---
 
-# 2. ESP32-S3 Control Domain
+# 2. System Controller Control Domain
 
-The ESP32-S3 is the system supervisor.
+The System Controller is the system supervisor.
 
 Its responsibilities are:
 
@@ -58,9 +58,9 @@ Its responsibilities are:
 - firmware update coordination
 
 
-The ESP32-S3 owns the main control SPI interface.
+The System Controller owns the main control SPI interface.
 
-            ESP32-S3
+            System Controller
 
          SPI MASTER
 
@@ -68,7 +68,7 @@ The ESP32-S3 owns the main control SPI interface.
     +---------+---------+
     |                   |
 
- ADAU1467            Si4684
+ Audio Processor            Radio Receiver
 
 SPI SLAVE          SPI SLAVE
 
@@ -78,11 +78,11 @@ The control bus is independent from all audio data paths.
 
 ---
 
-# 3. ADAU1467 SPI Domain
+# 3. Audio Processor SPI Domain
 
-The ADAU1467 contains its own SPI interface for external control.
+The Audio Processor contains its own SPI interface for external control.
 
-The ESP32-S3 uses this interface for:
+The System Controller uses this interface for:
 
 - DSP configuration
 - parameter updates
@@ -90,9 +90,9 @@ The ESP32-S3 uses this interface for:
 - status reading
 
 
-The ADAU1467 also manages its external program memory.
+The Audio Processor also manages its external program memory.
 
-             ADAU1467
+             Audio Processor
 
     +----------------------+
     |
@@ -100,23 +100,23 @@ The ADAU1467 also manages its external program memory.
     |
     v
 
-          25AA1024
+          Audio EEPROM
 
    DSP Program Memory
 
 
-The ESP32-S3 does not directly access the EEPROM during normal operation.
+The System Controller does not directly access the EEPROM during normal operation.
 
-The ADAU1467 is responsible for loading its DSP configuration.
+The Audio Processor is responsible for loading its DSP configuration.
 
 
 ---
 
-# 4. Si4684 SPI Domain
+# 4. Radio Receiver SPI Domain
 
-The Si4684 is controlled by the ESP32-S3 through its SPI slave interface.
+The Radio Receiver is controlled by the System Controller through its SPI slave interface.
 
-The ESP32-S3 manages:
+The System Controller manages:
 
 - initialization sequence
 - command exchange
@@ -124,13 +124,13 @@ The ESP32-S3 manages:
 - firmware loading procedure
 
 
-             ESP32-S3
+             System Controller
 
           SPI MASTER
 
                |
 
-             Si4684
+             Radio Receiver
 
                |
 
@@ -141,7 +141,7 @@ The ESP32-S3 manages:
           Internal RAM
 
 
-The Si4684 remains responsible for its internal operational memory.
+The Radio Receiver remains responsible for its internal operational memory.
 
 
 ---
@@ -152,7 +152,7 @@ The HubAudio architecture intentionally avoids a single shared SPI bus.
 
 The design uses:
 
-          ESP32-S3
+          System Controller
 
       +-------------+
 
@@ -162,7 +162,7 @@ The design uses:
 
       |             |
 
-  ADAU1467       Si4684
+  Audio Processor       Radio Receiver
 
 
 Advantages:
@@ -186,7 +186,7 @@ Power ON
 
 |
 
-ESP32-S3 boot
+System Controller boot
 
 |
 
@@ -194,14 +194,14 @@ Initialize SPI buses
 
 |
 
-Configure ADAU1467
+Configure Audio Processor
 
 |
-+--> ADAU loads DSP program from 25AA1024
++--> ADAU loads DSP program from Audio EEPROM
 
 |
 
-Configure Si4684
+Configure Radio Receiver
 
 |
 +--> Firmware initialization
@@ -212,7 +212,7 @@ Enable Audio Domain
 
 |
 
-ADAU1467 starts audio processing
+Audio Processor starts audio processing
 
 
 
@@ -224,7 +224,7 @@ ADAU1467 starts audio processing
 ## Control Domain
 
 
-ESP32-S3
+System Controller
 
 |
 |
@@ -249,7 +249,7 @@ I2S
 
 |
 
-ADAU1467
+Audio Processor
 
 |
 
@@ -284,11 +284,11 @@ Critical signals:
 
 # 9. Design Philosophy
 
-The ESP32-S3 is the system coordinator.
+The System Controller is the system coordinator.
 
-The ADAU1467 is the audio processor.
+The Audio Processor is the audio processor.
 
-The Si4684 is a specialized audio peripheral.
+The Radio Receiver is a specialized audio peripheral.
 
 Each component controls its own functional domain while remaining part of the
 complete HubAudio system.

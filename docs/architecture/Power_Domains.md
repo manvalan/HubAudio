@@ -31,7 +31,7 @@ Questa architettura permette:
 
 ---
 
-# ADAU1467 Domain
+# Audio Processor Domain
 
 ```
 3V3_AUDIO
@@ -63,7 +63,7 @@ Le tensioni locali vengono generate mediante LDO dedicati.
 
 ---
 
-# Si4684 Domain
+# Radio Receiver Domain
 
 ```
 3V3_AUDIO

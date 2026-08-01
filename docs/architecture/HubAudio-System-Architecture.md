@@ -8,99 +8,98 @@
 # 1. Overview
 
 HubAudio is a modular digital audio platform designed around a centralized
-audio processing architecture.
+Audio Domain architecture.
 
-The system separates three main functional domains:
+The system separates three main functional areas:
 
 - Control Domain
 - Audio Domain
-- Time Domain
+- Clock Distribution Layer
 
-Each domain has a clearly defined responsibility.
+Each area has a clearly defined responsibility.
 
 The architecture is based on the principle:
 
 
-ESP32-S3 manages the system.
+System Controller System Controller manages the Control Domain.
 
-ADAU1467 manages the audio.
+Audio Processor Audio Processor manages the Audio Domain.
 
-The clock domain synchronizes the orchestra.
+The Clock Distribution Layer provides the synchronization reference
+for all digital audio peripherals.
 
 
-
----
+The Audio Processor acts as the timing and routing authority of the digital
+audio infrastructure, while the System Controller provides supervision,
+connectivity and configuration management.
 
 # 2. High Level Architecture
-
-
                      HUBAUDIO
 
 
                 CONTROL DOMAIN
 
-                     ESP32-S3
+             System Controller System Controller
 
-              WiFi / Network / UI
+          Network / UI / Configuration
 
-                         |
+                       |
 
-                         |
+                       |
 
-                       SPI
+                      SPI
 
-                         |
+                       |
 
-         +---------------+---------------+
+        +--------------+--------------+
 
-         |                               |
+        |                             |
 
-      ADAU1467                        Si4684
+ Audio Processor Audio Processor      Radio Receiver Radio Receiver
 
-  Audio Processor                Radio Receiver
-
-
-         |
-         |
-         |
-    AUDIO DOMAIN
+        |
+        |
+        |
+     AUDIO DOMAIN
 
 
-         |
- +-------+-------+-------+-------+
- |       |       |       |       |
+ Audio Sources:
 
-ESP32 Si4684 BT RX Optical Other
-
-         |
-
-      ADAU1467
-
-    DSP / Routing / Mixing
+ System Controller System Controller
+ Radio Receiver Radio Receiver
+ Bluetooth Receiver
+ Optical Input
 
 
-         |
+        |
 
- +-------+-------+-------+
+        |
 
- |       |       |
+ Audio Processing
 
-CODEC BT TX Optical Out
-
-         |
-
-    TIME DOMAIN
-
-         |
-
-    Audio Clock Tree
-
-         |
-
-    MCLK / BCLK / LRCLK
+ DSP / Routing / Mixing
 
 
----
+        |
+
+        |
+
+ Audio Destinations:
+
+ CODEC/DAC
+ Bluetooth Transmitter
+ Optical Output
+
+
+                       |
+
+                       |
+
+          CLOCK DISTRIBUTION LAYER
+
+                       |
+
+              MCLK / BCLK / LRCLK
 
 # 3. Functional Domains
 
@@ -112,7 +111,7 @@ The Control Domain is responsible for system management.
 Main component:
 
 
-ESP32-S3
+System Controller
 
 
 Responsibilities:
@@ -128,7 +127,7 @@ Responsibilities:
 Communication:
 
 
-ESP32-S3
+System Controller
 
   |
 
@@ -147,9 +146,9 @@ The Control Domain does not transport real-time audio.
 
 # 3.2 Audio Domain
 
-The Audio Domain is centered around the ADAU1467.
+The Audio Domain is centered around the Audio Processor.
 
-The ADAU1467 is responsible for:
+The Audio Processor is responsible for:
 
 - DSP processing
 - audio routing
@@ -162,8 +161,8 @@ The ADAU1467 is responsible for:
 Audio sources:
 
 
-ESP32-S3
-Si4684
+System Controller
+Radio Receiver
 Bluetooth RX
 Optical Input
 
@@ -191,7 +190,7 @@ I2S
 
 The Time Domain provides the synchronization reference.
 
-The ADAU1467 is the audio clock master.
+The Audio Processor is the audio clock master.
 
 The clock distribution provides:
 
@@ -202,7 +201,7 @@ The clock distribution provides:
 
 Clock distribution:
 
-             ADAU1467
+             Audio Processor
 
          Audio Clock Master
 
@@ -218,7 +217,7 @@ Clock distribution:
 
     |           |           |
 
-  CODEC      Si4684      BT
+  CODEC      Radio Receiver      BT
 
 
 ---
@@ -226,7 +225,7 @@ Clock distribution:
 # 4. Component Roles
 
 
-## ESP32-S3
+## System Controller
 
 Role:
 
@@ -249,7 +248,7 @@ I2S Source
 
 ---
 
-## ADAU1467
+## Audio Processor
 
 Role:
 
@@ -275,7 +274,7 @@ Clock -> Synchronization
 
 ---
 
-## Si4684
+## Radio Receiver
 
 Role:
 
@@ -318,14 +317,14 @@ I2S
 
 |
 
-ADAU1467
+Audio Processor
 
 
 
 Bluetooth TX:
 
 
-ADAU1467
+Audio Processor
 
 |
 
@@ -359,14 +358,14 @@ I2S
 
 |
 
-ADAU1467
+Audio Processor
 
 
 
 Output:
 
 
-ADAU1467
+Audio Processor
 
 |
 
@@ -389,9 +388,9 @@ SPDIF
 
 HubAudio follows a distributed intelligence model.
 
-The ESP32-S3 provides connectivity and supervision.
+The System Controller provides connectivity and supervision.
 
-The ADAU1467 provides audio intelligence.
+The Audio Processor provides audio intelligence.
 
 Dedicated peripherals provide specialized functions.
 
@@ -448,19 +447,19 @@ HubAudio is structured around three independent but coordinated planes:
 
 CONTROL PLANE
 
-ESP32-S3
+System Controller
 |
 SPI
 
 AUDIO PLANE
 
-ADAU1467
+Audio Processor
 |
 I2S
 
 TIME PLANE
 
-ADAU1467
+Audio Processor
 |
 Clock Distribution
 

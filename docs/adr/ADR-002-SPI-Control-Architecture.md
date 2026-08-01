@@ -11,9 +11,9 @@ control and firmware management.
 
 The main devices involved are:
 
-- ESP32-S3 system controller
-- ADAU1467 audio processor
-- Si4684 radio receiver
+- System Controller system controller
+- Audio Processor audio processor
+- Radio Receiver radio receiver
 
 A clear separation between system control and internal device management is
 required.
@@ -25,9 +25,9 @@ audio transport interface.
 
 The SPI architecture is divided into independent functional domains.
 
-The ESP32-S3 operates as the master of the system control SPI bus.
+The System Controller operates as the master of the system control SPI bus.
 
-The ADAU1467 and Si4684 expose SPI slave interfaces for external
+The Audio Processor and Radio Receiver expose SPI slave interfaces for external
 configuration and control.
 
 The internal management of each device remains under the responsibility of
@@ -37,48 +37,48 @@ the device itself.
 
 System control SPI domain:
 
-            ESP32-S3
+            System Controller
 
           SPI MASTER
 
               |
     +---------+---------+
     |                   |
- ADAU1467            Si4684
+ Audio Processor            Radio Receiver
 
 SPI SLAVE          SPI SLAVE
 
-## ADAU1467 Configuration Domain
+## Audio Processor Configuration Domain
 
-The ADAU1467 manages its own external configuration memory through its
+The Audio Processor manages its own external configuration memory through its
 internal SPI master interface.
 
-          ADAU1467
+          Audio Processor
 
         SPI MASTER
 
               |
 
-          25AA1024
+          Audio EEPROM
 
    DSP Program / Configuration Memory
 
-The ESP32-S3 controls the ADAU1467 through the external SPI interface but
+The System Controller controls the Audio Processor through the external SPI interface but
 does not directly access the DSP configuration memory during normal
 operation.
 
-## Si4684 Firmware Domain
+## Radio Receiver Firmware Domain
 
-The Si4684 firmware loading and configuration process is managed through
+The Radio Receiver firmware loading and configuration process is managed through
 commands exchanged on the external SPI control interface.
 
-           ESP32-S3
+           System Controller
 
         SPI MASTER
 
               |
 
-           Si4684
+           Radio Receiver
 
               |
 
@@ -88,8 +88,8 @@ commands exchanged on the external SPI control interface.
 
          Internal RAM
 
-The ESP32-S3 controls the initialization process but does not directly access
-the internal operational memory of the Si4684.
+The System Controller controls the initialization process but does not directly access
+the internal operational memory of the Radio Receiver.
 
 ## Consequences
 
@@ -108,7 +108,7 @@ the internal operational memory of the Si4684.
 
 ## Rationale
 
-The ESP32-S3 supervises the complete HubAudio system but does not replace the
+The System Controller supervises the complete HubAudio system but does not replace the
 internal controllers of specialized devices.
 
 Each component remains responsible for its own functional domain.

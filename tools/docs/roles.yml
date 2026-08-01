@@ -1,0 +1,51 @@
+roles:
+
+  Audio Processor:
+    implementation: ADAU1467
+    category: functional
+    aliases: []
+
+  System Controller:
+    implementation: ESP32-S3
+    category: functional
+    aliases: []
+
+  Radio Receiver:
+    implementation: Si4684
+    category: functional
+    aliases: []
+
+  Bluetooth Receiver:
+    implementation: BT1026
+    category: functional
+    aliases: []
+
+  Bluetooth Transmitter:
+    implementation: BT1035
+    category: functional
+    aliases: []
+
+  Clock Buffer:
+    implementation: PCS2P2309NZ
+    category: infrastructure
+    aliases: []
+
+  Audio EEPROM:
+    implementation: 25AA1024
+    category: memory
+    aliases: []
+
+  Battery Charger:
+    implementation: BQ24074
+    category: power
+    aliases: []
+
+  Fuel Gauge:
+    implementation: BQ27441
+    category: power
+    aliases: []
+
+  Power Manager:
+    implementation: TPS65217
+    category: power
+    aliases: []

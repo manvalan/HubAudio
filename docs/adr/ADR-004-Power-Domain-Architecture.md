@@ -7,7 +7,7 @@
 
 HubAudio integra sottosistemi con caratteristiche elettriche molto differenti:
 
-- elaborazione digitale (ESP32-S3)
+- elaborazione digitale (System Controller)
 - DSP audio
 - ricevitore radio
 - Bluetooth
