@@ -1,7 +1,7 @@
 # ADR-004 – Power Domain Architecture
 
 - **Status:** Accepted
-- **Date:** YYYY-MM-DD
+- **Date:** 2026-08-02
 
 # Context
 

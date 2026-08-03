@@ -41,13 +41,15 @@ External audio devices operate as I2S slaves whenever supported.
 
 ## Audio Input Allocation
 
-| Audio Processor Port | Device | Function |
+|| Audio Processor Input | Device | Function |
 |---|---|---|
 | SDATA_IN0 | System Controller | Network audio stream |
 | SDATA_IN1 | Radio Receiver | Radio audio |
-| SDATA_IN2 | DECODEC | Optical digital input |
-| SDATA_IN3 | Bluetooth RX | Wireless audio input |
+| SPDIFIN | Optical Interface | Optical digital audio input |
+| SDATA_IN2 | Bluetooth RX | Wireless audio input |
 
+The ADAU1467 internal audio routing matrix allows any digital audio input
+to be routed to the DSP core, ASRCs, serial outputs or SPDIF output.
 
 System Controller --------
 Radio Receiver ---------
@@ -57,11 +59,13 @@ BT RX ---------/
 
 ## Audio Output Allocation
 
-| Audio Processor Port | Device | Function |
+## Audio Output Allocation
+
+| Audio Processor Output | Device | Function |
 |---|---|---|
 | SDATA_OUT0 | CODEC/DAC | Analog audio output |
 | SDATA_OUT1 | Bluetooth TX | Wireless audio output |
-| SDATA_OUT2 | ENCODEC | Optical digital output |
+| SPDIFOUT | Optical Interface | Optical digital audio output |
 | SDATA_OUT3 | Reserved | Future expansion |
 
              Audio Processor

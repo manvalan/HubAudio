@@ -37,13 +37,14 @@ The  Audio Processor is responsible for:
 - audio clock generation
 - synchronization of external audio peripherals
 
-The  Audio Processor is considered the audio domain master.
+The Audio Processor is the sole timing and routing master of the Audio Domain.
 
 The System Controller participates in the Audio Domain as a digital audio source. It does not act as the audio timing master or routing controller. Its role inside the audio domain is equivalent to other digital audio sources.
+
 The System Controller has a dual role:
 
 - audio source inside the Audio Domain
-system supervisor inside the Control Domain
+- system supervisor inside the Control Domain
 
 It operates as system supervisor and is responsible for:
 

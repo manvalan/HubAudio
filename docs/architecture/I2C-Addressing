@@ -1,0 +1,13 @@
+# Tabella Indirizzi I2C
+
+| Dispositivo       | Funzione / Nome   | Configurazione Pin Indirizzo   | Indirizzo I2C (Hex)   |
+|:------------------|:------------------|:-------------------------------|:----------------------|
+| TCA9555 #1        | POWER_CONTROLLER  | A2=GND, A1=GND, A0=GND         | 0x20                  |
+| TCA9555 #2        | AUDIO_CONTROL     | A2=GND, A1=GND, A0=VCC         | 0x21                  |
+| INA228            | DIGITAL           | A1=GND, A0=GND                 | 0x40                  |
+| INA228            | AUDIO             | A1=GND, A0=VCC                 | 0x41                  |
+| EEPROM 24AA025E48 | Memoria           | A2=GND, A1=GND, A0=GND         | 0x50                  |
+| TLV320AIC3104     | Audio Codec       | ADDR = GND                     | 0x18                  |
+| SC16IS740         | RX                | A1=GND, A0=GND                 | 0x48                  |
+| SC16IS740         | TX                | A1=GND, A0=VCC                 | 0x49                  |
+| BQ27441           | Fuel Gauge        | Indirizzo fisso                | 0x55                  |

@@ -23,7 +23,7 @@ audio transport interface.
 
 ## Decision
 
-The SPI architecture is divided into independent functional domains.
+The SPI architecture is divided into independent control domains.
 
 The System Controller operates as the master of the system control SPI bus.
 
@@ -88,8 +88,7 @@ commands exchanged on the external SPI control interface.
 
          Internal RAM
 
-The System Controller controls the initialization process but does not directly access
-the internal operational memory of the Radio Receiver.
+The System Controller supervises the Radio Receiver initialization process. Internal firmware loading remains under the responsibility of the Radio Receiver boot architecture.
 
 ## Consequences
 
