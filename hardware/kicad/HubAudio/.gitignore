@@ -1,2 +1,9 @@
+# KiCad lock / temporary files
+*.lck
 *.kicad_prl
-*.kicad_pro.lck
+
+# KiCad history
+.history/
+
+# KiCad automatic restore/backup directories
+_restore_backup_*/

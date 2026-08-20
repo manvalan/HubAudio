@@ -11,3 +11,4 @@
 | SC16IS740         | RX                | A1=GND, A0=GND                 | 0x48                  |
 | SC16IS740         | TX                | A1=GND, A0=VCC                 | 0x49                  |
 | BQ27441           | Fuel Gauge        | Indirizzo fisso                | 0x55                  |
+| BQ25896           | Fuel manager.     | Indirizzo fissi                | 0x6B
