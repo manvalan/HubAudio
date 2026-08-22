@@ -3974,6 +3974,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:VD"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VD"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VD\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VD_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VD_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "SPI flash for main filesystem"
 		(exclude_from_sim no)
@@ -4004,12 +4143,6 @@
 		(uuid "2f2507e2-9f52-48ef-9050-9762875269ef")
 	)
 	(junction
-		(at 257.81 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f4941a9-f2b1-4674-a8ed-55447bbcc5ec")
-	)
-	(junction
 		(at 257.81 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4020,6 +4153,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5f9cab28-5f86-4a88-a18f-05fbc18fc208")
+	)
+	(junction
+		(at 93.98 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64b9352f-0556-480e-8764-6fc571545c25")
 	)
 	(junction
 		(at 99.06 30.48)
@@ -4037,7 +4176,7 @@
 		(at 177.8 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "adc75946-c376-405e-a3b7-9fb5f887dd33")
+		(uuid "b4355e7c-34bd-4441-bec4-caf3337d1399")
 	)
 	(junction
 		(at 99.06 22.86)
@@ -4050,6 +4189,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb8f0378-dcaa-400e-a17c-e6721f930065")
+	)
+	(junction
+		(at 255.27 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0c05b2c-5f1e-4a95-b434-ccaefe0ed822")
 	)
 	(junction
 		(at 45.72 27.94)
@@ -4075,13 +4220,107 @@
 		(color 0 0 0 0)
 		(uuid "fc0c48f7-5599-497e-9ce5-0173d9fac527")
 	)
-	(no_connect
-		(at 92.71 138.43)
-		(uuid "44b30d87-f187-403c-8e3e-407718026bd7")
+	(junction
+		(at 114.3 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "febbdf4c-6fdf-46b8-896c-a4445e6a4c5a")
 	)
 	(no_connect
-		(at 92.71 140.97)
-		(uuid "92dfe279-3753-4172-bdaa-ee65be608877")
+		(at 205.74 91.44)
+		(uuid "03b9c479-a5ed-406e-bdaa-19c688d3096c")
+	)
+	(no_connect
+		(at 205.74 81.28)
+		(uuid "0ee6049b-0d8c-48f1-a949-ef56697cc2ff")
+	)
+	(no_connect
+		(at 205.74 45.72)
+		(uuid "22770226-15a7-4eaf-9325-4ca63bcda180")
+	)
+	(no_connect
+		(at 96.52 76.2)
+		(uuid "2588a9e7-170b-4d31-a8f8-5c6198b6f7a5")
+	)
+	(no_connect
+		(at 232.41 60.96)
+		(uuid "2966c50c-c9a2-4f9c-9ca8-6891e2102b52")
+	)
+	(no_connect
+		(at 232.41 55.88)
+		(uuid "296b88f1-e693-47a2-97f2-a259269f8fef")
+	)
+	(no_connect
+		(at 96.52 91.44)
+		(uuid "36ac015d-fb75-420d-8ed3-6dabd6148c31")
+	)
+	(no_connect
+		(at 154.94 162.56)
+		(uuid "44260749-2742-477a-b8a0-8cdef5e8071f")
+	)
+	(no_connect
+		(at 232.41 63.5)
+		(uuid "452c8c0e-4672-4dae-bd39-781778d1d74c")
+	)
+	(no_connect
+		(at 96.52 66.04)
+		(uuid "45d9578f-4fdf-4f1a-9f2a-fdeb7bf087ea")
+	)
+	(no_connect
+		(at 96.52 83.82)
+		(uuid "5e34f6a4-343f-4fad-83cc-34f0f020e527")
+	)
+	(no_connect
+		(at 175.26 110.49)
+		(uuid "69730047-52e8-4a79-8c89-499f45683d1f")
+	)
+	(no_connect
+		(at 205.74 50.8)
+		(uuid "6ba1f3b4-8bec-4d07-aedf-9426b6292eb3")
+	)
+	(no_connect
+		(at 157.48 110.49)
+		(uuid "6bc5b7e7-0a1d-4be4-a487-938c8616b2bd")
+	)
+	(no_connect
+		(at 205.74 43.18)
+		(uuid "7c010ba2-7ab0-4916-9a69-5a7f2fda799e")
+	)
+	(no_connect
+		(at 205.74 48.26)
+		(uuid "7db91d20-0b59-4c16-b513-5002f4b94018")
+	)
+	(no_connect
+		(at 96.52 53.34)
+		(uuid "9f1168fb-eace-4cdb-91f8-70b29c9237ea")
+	)
+	(no_connect
+		(at 205.74 71.12)
+		(uuid "cfe1949b-e2a3-487c-a536-a12da23b4d0f")
+	)
+	(no_connect
+		(at 232.41 53.34)
+		(uuid "dd6e008d-d11d-4dae-9186-4a26ba657583")
+	)
+	(no_connect
+		(at 177.8 133.35)
+		(uuid "e64652ea-97c2-4617-9cc5-ba7ae8f54c31")
+	)
+	(no_connect
+		(at 160.02 110.49)
+		(uuid "ed7599f7-dd1a-4650-99c6-c285ef1d0698")
+	)
+	(no_connect
+		(at 232.41 93.98)
+		(uuid "edfdf35a-5696-437f-a411-0355366890f0")
+	)
+	(no_connect
+		(at 96.52 88.9)
+		(uuid "fb7c2319-6f01-4fb4-8085-029a24957dd5")
+	)
+	(no_connect
+		(at 205.74 38.1)
+		(uuid "fdc65096-9f62-4fab-ba3b-26b2cf6ea161")
 	)
 	(wire
 		(pts
@@ -4165,6 +4404,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 111.76) (xy 149.86 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "147b7e9b-addd-4995-b105-2cbd36f29749")
+	)
+	(wire
+		(pts
 			(xy 167.64 162.56) (xy 167.64 171.45)
 		)
 		(stroke
@@ -4182,16 +4431,6 @@
 			(type default)
 		)
 		(uuid "166682ae-0430-4ee6-a9b3-3cd4ee7cba81")
-	)
-	(wire
-		(pts
-			(xy 205.74 73.66) (xy 232.41 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17bf849c-5fa7-415e-ac73-ae1b7952307e")
 	)
 	(wire
 		(pts
@@ -4235,6 +4474,26 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 162.56) (xy 160.02 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ff6319c-99dd-4d9a-8b85-b213f89f1bec")
+	)
+	(wire
+		(pts
+			(xy 92.71 140.97) (xy 99.06 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "256902eb-4fa9-4e57-b601-eeab64ab67c6")
+	)
+	(wire
+		(pts
 			(xy 40.64 46.99) (xy 46.99 46.99)
 		)
 		(stroke
@@ -4242,6 +4501,16 @@
 			(type default)
 		)
 		(uuid "25f4f82c-e2f0-4628-a395-6d41ade37d5f")
+	)
+	(wire
+		(pts
+			(xy 177.8 133.35) (xy 177.8 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26bbaffb-4555-4697-9387-edf610fd4f57")
 	)
 	(wire
 		(pts
@@ -4275,13 +4544,23 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 55.88) (xy 257.81 55.88)
+			(xy 252.73 55.88) (xy 255.27 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "35994a61-3d72-4724-a840-7f9b0e29701e")
+	)
+	(wire
+		(pts
+			(xy 224.79 73.66) (xy 232.41 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3645b66f-8941-45d4-9a77-01d325d442e1")
 	)
 	(wire
 		(pts
@@ -4302,16 +4581,6 @@
 			(type default)
 		)
 		(uuid "3beed945-bc1b-456d-91ed-42f6f6665645")
-	)
-	(wire
-		(pts
-			(xy 177.8 127) (xy 177.8 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e09c864-741f-47ec-abf3-2cba9d6ad888")
 	)
 	(wire
 		(pts
@@ -4395,6 +4664,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 55.88) (xy 257.81 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ea91c97-5c29-4182-a21f-521f5a36336a")
+	)
+	(wire
+		(pts
 			(xy 24.13 133.35) (xy 35.56 133.35)
 		)
 		(stroke
@@ -4415,13 +4694,23 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 116.84) (xy 154.94 142.24)
+			(xy 92.71 138.43) (xy 106.68 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "542075f0-c07b-475d-9163-b541353d4853")
+		(uuid "55897815-7909-4309-8fd4-549a3815a18d")
+	)
+	(wire
+		(pts
+			(xy 152.4 111.76) (xy 152.4 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57c0abe6-b378-416b-b3aa-9a6ac0ca6d26")
 	)
 	(wire
 		(pts
@@ -4452,6 +4741,16 @@
 			(type default)
 		)
 		(uuid "63a1671f-7864-4ea8-a5fd-e7f4827bc852")
+	)
+	(wire
+		(pts
+			(xy 157.48 162.56) (xy 157.48 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64844eec-af91-4c92-aa7c-5658745e002d")
 	)
 	(wire
 		(pts
@@ -4495,6 +4794,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 73.66) (xy 217.17 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f6e7f56-1ffb-459c-b622-be223d897321")
+	)
+	(wire
+		(pts
 			(xy 40.64 27.94) (xy 45.72 27.94)
 		)
 		(stroke
@@ -4525,6 +4834,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 135.89) (xy 154.94 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d950cda-edfc-4bdc-8a73-e9fcd3312357")
+	)
+	(wire
+		(pts
 			(xy 46.99 46.99) (xy 55.88 46.99)
 		)
 		(stroke
@@ -4532,16 +4851,6 @@
 			(type default)
 		)
 		(uuid "818fb86e-9627-45f3-b215-4ab60890281f")
-	)
-	(wire
-		(pts
-			(xy 257.81 55.88) (xy 270.51 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "864dfc1e-b771-4f5c-a238-9f27723d4897")
 	)
 	(wire
 		(pts
@@ -4595,7 +4904,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 151.13) (xy 92.71 151.13)
+			(xy 95.25 151.13) (xy 93.98 151.13)
 		)
 		(stroke
 			(width 0)
@@ -4605,23 +4914,13 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 140.97) (xy 57.15 140.97)
+			(xy 50.8 140.97) (xy 59.69 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9e1a38f3-5fba-4eb5-a202-5072df6624a8")
-	)
-	(wire
-		(pts
-			(xy 172.72 109.22) (xy 172.72 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a27ad5e3-4670-4a84-8d80-c929651aa0cd")
 	)
 	(wire
 		(pts
@@ -4632,6 +4931,16 @@
 			(type default)
 		)
 		(uuid "a33ca7f8-c4a7-4843-bdb1-a79e10a1b228")
+	)
+	(wire
+		(pts
+			(xy 154.94 111.76) (xy 154.94 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a35d5576-1689-408e-8e80-e2204d08cbbb")
 	)
 	(wire
 		(pts
@@ -4655,7 +4964,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 143.51) (xy 57.15 143.51)
+			(xy 50.8 143.51) (xy 59.69 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4755,6 +5064,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 151.13) (xy 92.71 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c43f5dd0-dffe-4842-b3fa-1a6f054c10b0")
+	)
+	(wire
+		(pts
 			(xy 205.74 55.88) (xy 232.41 55.88)
 		)
 		(stroke
@@ -4835,6 +5154,26 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 110.49) (xy 172.72 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dda2b155-759a-4ec6-b4f7-0cdc0bfe34b0")
+	)
+	(wire
+		(pts
+			(xy 106.68 140.97) (xy 114.3 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddedf588-b7a9-4105-8a8d-cf8967688182")
+	)
+	(wire
+		(pts
 			(xy 205.74 93.98) (xy 232.41 93.98)
 		)
 		(stroke
@@ -4885,13 +5224,13 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 19.05) (xy 45.72 19.05)
+			(xy 114.3 140.97) (xy 114.3 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e61de54d-0f50-4169-90ba-35d869f38986")
+		(uuid "e60fb936-05bf-4780-a759-f4e6dd360ee8")
 	)
 	(wire
 		(pts
@@ -4922,6 +5261,16 @@
 			(type default)
 		)
 		(uuid "e7c7ccd5-25f6-419b-97e9-65c59a7e94fa")
+	)
+	(wire
+		(pts
+			(xy 147.32 111.76) (xy 147.32 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea225f5d-ae25-4487-acab-b0bba0d449f4")
 	)
 	(wire
 		(pts
@@ -4985,6 +5334,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 140.97) (xy 118.11 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7ed08ec-ac7c-457b-aa3d-269a75fdd2fd")
+	)
+	(wire
+		(pts
 			(xy 40.64 135.89) (xy 40.64 133.35)
 		)
 		(stroke
@@ -5033,26 +5392,6 @@
 		)
 		(uuid "ffefa80a-2c2e-47b8-bcaf-a955d316e478")
 	)
-	(label "3V3_DIGITAL"
-		(at 71.12 158.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2abd973d-0462-476b-9639-493e1f103011")
-	)
-	(label "3V3_DIGITAL"
-		(at 19.05 19.05 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2c161517-c58f-4848-a00a-928ad181272c")
-	)
 	(label "ESP32_EN"
 		(at 87.63 40.64 0)
 		(effects
@@ -5062,16 +5401,6 @@
 			(justify left bottom)
 		)
 		(uuid "2d32fbdb-5ba8-431d-b4c7-4311b67dd56f")
-	)
-	(label "3V3_DIGITAL"
-		(at 261.62 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "457bbb27-48b7-4efe-9677-197aaf641175")
 	)
 	(label "ESP_32_BOOT"
 		(at 43.18 46.99 0)
@@ -5103,89 +5432,25 @@
 		)
 		(uuid "5f6f452d-a56a-4974-914a-6b5d4fd0459b")
 	)
-	(label "3V3_DIGITAL"
-		(at 154.94 118.11 270)
+	(label "I2C_SDA"
+		(at 59.69 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
-		)
-		(uuid "63f500eb-bc4a-4a74-ac42-7ab806446f65")
-	)
-	(label "I2C_SDA"
-		(at 53.34 140.97 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
 		)
 		(uuid "73033bc5-c778-47de-a311-5b0f6d3768c3")
 	)
-	(label "3V3_DIGITAL"
-		(at 87.63 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7f93d861-9154-4a5f-af7d-793aa1833ed9")
-	)
-	(label "3V3_DIGITAL"
-		(at 177.8 128.27 270)
+	(label "I2C_SCL"
+		(at 59.69 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "85938ca3-0439-48ab-b94c-ca561c8b019c")
-	)
-	(label "I2C_SCL"
-		(at 53.34 143.51 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
 		(uuid "95ec543d-83c7-4f5e-a354-abcb458454bb")
-	)
-	(label "3V3_DIGITAL"
-		(at 25.4 133.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f08c4233-8dbb-4338-80e7-75edd449f2db")
-	)
-	(global_label "3V3_DIGITAL"
-		(shape input)
-		(at 86.36 30.48 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0405eb39-235b-481e-921e-d2532b70a890")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.0657 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(global_label "ETH_50MHZ_CLOCK"
 		(shape input)
@@ -5283,9 +5548,9 @@
 			)
 		)
 	)
-	(global_label "PCA_POWER_INT"
-		(shape input)
-		(at 96.52 76.2 180)
+	(global_label "SPI_DEV_MAN_B_CS"
+		(shape output)
+		(at 162.56 171.45 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5293,9 +5558,9 @@
 			)
 			(justify right)
 		)
-		(uuid "2bdfe551-0a76-474a-b856-a6ae9df5e579")
+		(uuid "25fb19a5-7aab-4667-8ba3-efe850f0992c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.5972 76.2 0)
+			(at 162.56 192.5175 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5451,30 +5716,6 @@
 			)
 		)
 	)
-	(global_label "SPI_CODEC_CS"
-		(shape output)
-		(at 162.56 171.45 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "59d54ed7-f71f-46d6-a25d-17aaca50a97b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.56 188.2237 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "I2S_OUT_ESP32_BCLK"
 		(shape input)
 		(at 232.41 88.9 0)
@@ -5520,6 +5761,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "SPI_CODEC_CS"
+		(shape output)
+		(at 160.02 171.45 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6d2ac6f2-fd51-4fb1-b3b3-0f51081d5020")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.02 188.2237 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -5667,7 +5932,7 @@
 			)
 		)
 	)
-	(global_label "SPI_DEV_MAN_CS"
+	(global_label "SPI_DEV_MAN_A_CS"
 		(shape output)
 		(at 165.1 171.45 270)
 		(fields_autoplaced yes)
@@ -5679,7 +5944,31 @@
 		)
 		(uuid "9fae9b3e-5009-4ea9-98c8-847ab53e5eca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.1 190.2799 90)
+			(at 165.1 192.3361 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "DEV_MAN_A_INT"
+		(shape input)
+		(at 147.32 111.76 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a287f944-6884-4e61-a7f8-6ce8de3fc70f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.32 129.0176 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5811,6 +6100,30 @@
 			)
 		)
 	)
+	(global_label "DEV_MAN_B_INT"
+		(shape input)
+		(at 149.86 111.76 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c634bf66-523f-49bc-a8ea-8607f154016c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.86 129.199 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "I2S_IN_ESP32_SDATA"
 		(shape bidirectional)
 		(at 232.41 73.66 0)
@@ -5859,6 +6172,30 @@
 			)
 		)
 	)
+	(global_label "DEV_MAN_A_RESET"
+		(shape input)
+		(at 152.4 111.76 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ccea533b-c1dd-42d2-9858-d51f922891ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.4 131.8598 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "ETH_INT#"
 		(shape input)
 		(at 96.52 58.42 180)
@@ -5883,9 +6220,9 @@
 			)
 		)
 	)
-	(global_label "DEVICE_MANAGER_RST"
+	(global_label "DEV_MAN_B_RESET"
 		(shape input)
-		(at 96.52 91.44 180)
+		(at 154.94 111.76 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5893,33 +6230,9 @@
 			)
 			(justify right)
 		)
-		(uuid "e659dafc-b3c5-4bee-8569-781de201ace5")
+		(uuid "daf4c591-4e1a-4989-89b4-1054c4d4e7e9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.973 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "DEVICE_MANAGER_INT"
-		(shape input)
-		(at 96.52 88.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e858b199-ac14-40f3-b834-bb53be34e7da")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 73.5172 88.9 0)
+			(at 154.94 132.0412 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6027,9 +6340,9 @@
 			)
 		)
 	)
-	(global_label "ETH_RST#"
-		(shape bidirectional)
-		(at 96.52 66.04 180)
+	(global_label "SPI_UART_CS"
+		(shape output)
+		(at 157.48 171.45 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6037,9 +6350,9 @@
 			)
 			(justify right)
 		)
-		(uuid "f61a486d-4c56-4f14-9329-dda61d3d3592")
+		(uuid "f9e3f610-c401-4777-a431-eeb8ce2d2fc1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 83.2917 66.04 0)
+			(at 157.48 186.5909 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6096,6 +6409,98 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 102.87 140.97 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "001cebb2-78ad-4030-8aa6-5c9522f75d5a")
+		(property "Reference" "R75"
+			(at 103.124 138.938 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 102.87 141.478 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 102.87 142.748 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RC0805FR-0710KL"
+			(at 102.87 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-0710KL"
+			(at 102.87 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "46cccded-9eb5-4ea9-8632-566598156100")
+		)
+		(pin "2"
+			(uuid "6abe9a76-29e4-445a-9dd2-9368b099060c")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "R75")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -6309,8 +6714,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RC0805FR-074K7L"
 			(at 45.72 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-074K7L"
+			(at 45.72 24.13 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6391,7 +6807,18 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 35.56 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 35.56 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -6451,7 +6878,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 100.0252 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -6473,7 +6900,18 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "GRM21BZ71A226ME15L"
+			(at 99.06 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BZ71A226ME15L"
 			(at 99.06 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -6563,6 +7001,17 @@
 				)
 			)
 		)
+		(property "PNM" "TS3425UA-3x4x2.5-160"
+			(at 33.02 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "79f24461-be69-47fc-8c45-8ed6876fa7e8")
 		)
@@ -6579,6 +7028,83 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
 					(reference "BOOT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 24.13 133.35 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2c84a8f0-35fa-418f-9ebb-282a1eb77939")
+		(property "Reference" "#PWR0245"
+			(at 27.94 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_DIGITAL"
+			(at 20.32 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 24.13 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0adee3fd-4010-46ff-bc8e-135671fe355e")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "#PWR0245")
 					(unit 1)
 				)
 			)
@@ -6648,6 +7174,17 @@
 				)
 			)
 		)
+		(property "PNM" "TS3425UA-3x4x2.5-160"
+			(at 33.02 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "78d9fa85-c4cc-474b-b40b-8ae893e4a52e")
 		)
@@ -6664,6 +7201,83 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
 					(reference "RESET1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 69.85 158.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3cb36b07-9cc6-4df9-98cb-b5afd7cb3fbc")
+		(property "Reference" "#PWR0246"
+			(at 73.66 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_DIGITAL"
+			(at 66.04 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 69.85 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8b3cd443-4d57-4db9-8b21-342ce9f72ce5")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "#PWR0246")
 					(unit 1)
 				)
 			)
@@ -6723,8 +7337,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RC0805FR-074K7L"
 			(at 257.81 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-074K7L"
+			(at 257.81 59.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6772,7 +7397,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74HC138"
+		(property "Value" "74HC138PW,118"
 			(at 177.8 154.5433 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6783,7 +7408,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
 			(at 162.56 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -6805,7 +7430,18 @@
 				)
 			)
 		)
-		(property "Description" "3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16"
+		(property "Description" "74HC138PW,118"
+			(at 162.56 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "74HC138PW,118"
 			(at 162.56 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -6874,6 +7510,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 110.49 138.43 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4c3388bf-e5c9-4604-b940-5198e137a784")
+		(property "Reference" "R76"
+			(at 110.744 136.398 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 110.49 138.938 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 110.49 140.208 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RC0805FR-0710KL"
+			(at 110.49 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-0710KL"
+			(at 110.49 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "831e305d-0ac8-4003-a7ec-bce09a2c0b2c")
+		)
+		(pin "2"
+			(uuid "c19590cc-b4af-4106-bbb4-036ad087ce5c")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "R76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 181.61 144.78 270)
 		(unit 1)
@@ -6929,7 +7657,18 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 181.61 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 181.61 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -7033,6 +7772,175 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VD")
+		(at 177.8 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5513d480-5e66-4852-ab79-22dad9942416")
+		(property "Reference" "#PWR0249"
+			(at 177.8 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_DIGITAL"
+			(at 175.768 133.604 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 177.8 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "189a3e80-42f8-4b30-9d42-6ae35d8f615e")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "#PWR0249")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 93.98 154.94 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "597b11f0-04f4-4179-94ac-d13e12085265")
+		(property "Reference" "R94"
+			(at 91.948 154.686 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 94.488 154.94 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 95.758 154.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RC0805FR-0710KL"
+			(at 93.98 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-0710KL"
+			(at 93.98 154.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8870411b-4d56-4fee-96f4-c5e47efe2822")
+		)
+		(pin "2"
+			(uuid "d232494b-c804-4595-ba00-2457c14f4c27")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "R94")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 82.55 163.83 0)
 		(unit 1)
@@ -7088,7 +7996,18 @@
 				)
 			)
 		)
-		(property "Description" "CL31B106KBHNNNE"
+		(property "Description" "GRM31CR71E106KA12L"
+			(at 82.55 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM31CR71E106KA12L"
 			(at 82.55 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -7270,6 +8189,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VD")
+		(at 86.36 30.48 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "84949270-8487-4e68-aa77-8fd90f2555e9")
+		(property "Reference" "#PWR0250"
+			(at 90.17 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_DIGITAL"
+			(at 82.55 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 86.36 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d12d99de-a1b3-47b9-8541-3cc053a93ce4")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "#PWR0250")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Endstufe:W25Q128JVS")
 		(at 82.55 143.51 180)
 		(unit 1)
@@ -7324,7 +8320,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "W25Q128JVS"
 			(at 82.55 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -7336,6 +8332,17 @@
 			)
 		)
 		(property "LCSC Part #" "C97521"
+			(at 82.55 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "W25Q128JVS"
 			(at 82.55 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -7374,6 +8381,83 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
 					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 255.27 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8f51106d-39f8-40e9-bfa0-6112601cabc9")
+		(property "Reference" "#PWR0252"
+			(at 255.27 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_DIGITAL"
+			(at 255.27 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 255.27 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3f179014-f191-4879-9ccb-e76550fa02b0")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "#PWR0252")
 					(unit 1)
 				)
 			)
@@ -7433,8 +8517,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RC0805FR-0710KL"
 			(at 177.8 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-0710KL"
+			(at 177.8 114.3 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7532,6 +8627,237 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
 					(reference "#PWR0125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 93.98 158.75 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "936253b1-2e82-4586-8fe9-54650cc290ed")
+		(property "Reference" "#PWR0304"
+			(at 93.98 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_DIGITAL"
+			(at 96.52 159.766 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 93.98 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c646af08-c048-46c3-9c42-9b7a9175f13a")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "#PWR0304")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 154.94 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9f09f36c-137e-4421-a6d5-34c4e2ecb75b")
+		(property "Reference" "#PWR0248"
+			(at 154.94 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_DIGITAL"
+			(at 153.67 138.176 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 154.94 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8386addb-e5e9-45a9-bfcd-2d0e08dba749")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "#PWR0248")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 118.11 140.97 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9f53e204-d24f-4f89-81f2-890db3e1abc1")
+		(property "Reference" "#PWR0247"
+			(at 114.3 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_DIGITAL"
+			(at 121.92 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 118.11 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "62b30e01-d9fa-4985-96a3-76a555e22e83")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "#PWR0247")
 					(unit 1)
 				)
 			)
@@ -7671,7 +8997,18 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 110.49 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 110.49 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -7831,7 +9168,18 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 46.99 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 46.99 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -7913,7 +9261,18 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "GCM21BR71E105KA56L"
+			(at 45.72 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GCM21BR71E105KA56L"
 			(at 45.72 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -8384,8 +9743,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RC0805FR-074K7L"
 			(at 252.73 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-074K7L"
+			(at 252.73 59.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8489,6 +9859,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 220.98 73.66 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f4f6dc9d-04ff-4df1-8f90-bfb90f9acd1d")
+		(property "Reference" "R97"
+			(at 225.806 74.676 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 220.726 73.66 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 220.98 75.438 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RC0805FR-0733RL — 33 Ω — 1% — 0805"
+			(at 220.98 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-0733RL — 33 Ω — 1% — 0805"
+			(at 220.98 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc835dd4-7e63-4c87-bb92-dc8539c0b062")
+		)
+		(pin "2"
+			(uuid "7d18b86d-d962-4279-8021-c69460dde651")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "R97")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Memory_EEPROM:24AA025E-SN")
 		(at 40.64 143.51 0)
 		(unit 1)
@@ -8511,7 +9971,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "24AA025E48"
+		(property "Value" "24AA025E64"
 			(at 42.7833 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8544,7 +10004,18 @@
 				)
 			)
 		)
-		(property "Description" "I2C Serial EEPROM with EUI-48 or EUI-64, 2Kb, SOIC-8"
+		(property "Description" "24AA025E64"
+			(at 40.64 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "24AA025E64"
 			(at 40.64 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8610,7 +10081,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "ESP32-S31-WROOM-3"
 			(at 107.95 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8642,8 +10113,19 @@
 				)
 			)
 		)
-		(property "Description" "2.4 GHz Wi-Fi 6, Bluetooth 5.4 (LE), Bluetooth Classic, Zigbee and Thread (802.15.4) module Built around ESP32-S31 series of SoCs, RISC-V 32-bit dual-core microprocessor 54 GPIOs, rich set of peripherals On-board PCB antenna"
+		(property "Description" "ESP32-S31-WROOM-3"
 			(at 107.95 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "ESP32-S31-WROOM-3"
+			(at 162.56 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9032,6 +10514,83 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
 					(reference "#PWR0112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 45.72 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fd6b9b1c-288f-4bb0-a83b-a65fceb09ded")
+		(property "Reference" "#PWR0251"
+			(at 45.72 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_DIGITAL"
+			(at 45.72 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 45.72 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b503ec79-135d-4f5a-a903-d8a90029635c")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/f8fd2832-13ed-4270-9e98-2ba7eddd8eec"
+					(reference "#PWR0251")
 					(unit 1)
 				)
 			)

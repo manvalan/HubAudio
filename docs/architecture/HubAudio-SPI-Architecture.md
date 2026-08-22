@@ -1,294 +1,176 @@
-# HubAudio SPI Control Architecture
+# HubAudio — SPI Bus Map
 
-- Status: Draft
-- Date: 2026-08-01
-- Document Type: Architecture Specification
+**Progetto:** HubAudio  
+**Revisione:** definitiva  
+**Data:** 2026-08-23
 
+## SPI Bus Architecture
 
-# 1. Overview
+HubAudio utilizza un bus SPI principale con ESP32-S31-WROOM-3 come master.
 
-The HubAudio system separates the control communication layer from the audio
-signal layer.
+Il bus principale condivide:
 
-SPI is used exclusively for:
+- `SPI_SCLK`
+- `SPI_MOSI`
+- `SPI_MISO`
 
-- device configuration
-- initialization
-- status monitoring
-- firmware loading procedures
-- parameter management
-
-SPI is not used for real-time audio transport.
-
-
-The control architecture is based on independent SPI domains.
-
-
-CONTROL PLANE
-
-             System Controller
-
-          System Controller
-
-                |
-                |
-          SPI Control Bus
-
-    +-----------+-----------+
-    |                       |
-
-Audio Processor                Radio Receiver
-
-Audio Processor Radio Receiver
-
-
+Ogni slave dispone di una propria linea Chip Select (`CS`).
 
 ---
 
-# 2. System Controller Control Domain
+## SPI Main Bus
 
-The System Controller is the system supervisor.
+| IC | Dispositivo | Ruolo | CS |
+|---|---|---|---|
+| U5 | XTAC5212IRGER | Audio Codec | `SPI_CODEC_CS` |
+| U34 | MCP23S17-E/ML | Device Manager A | `SPI_DEV_MAN_A_CS` |
+| U36 | MCP23S17-E/ML | Device Manager B | `SPI_DEV_MAN_B_CS` |
+| U18 | ADAU1467WBCPZ300R | Audio DSP | `SPI_ADAU1467_CS` |
+| U12 | Si4684-A10-GM | Radio | `SPI_SI4684_CS` |
+| U10 | W25Q128JVS | Flash | `SPI_W25Q128_CS` |
+| U30 | SC16IS740IPW,128 | UART Bridge | `SPI_UART_CS` |
 
-Its responsibilities are:
+### Shared SPI Signals
 
-- system startup
-- peripheral initialization
-- configuration management
-- communication with external devices
-- firmware update coordination
+| Segnale | Funzione |
+|---|---|
+| `SPI_SCLK` | SPI Clock |
+| `SPI_MOSI` | Master Out / Slave In |
+| `SPI_MISO` | Master In / Slave Out |
 
+Il master SPI è l'**ESP32-S31-WROOM-3 (U11)**.
 
-The System Controller owns the main control SPI interface.
+Le linee `SPI_SCLK`, `SPI_MOSI` e `SPI_MISO` sono condivise tra gli slave
+del bus principale.
 
-            System Controller
-
-         SPI MASTER
-
-              |
-    +---------+---------+
-    |                   |
-
- Audio Processor            Radio Receiver
-
-SPI SLAVE          SPI SLAVE
-
-
-The control bus is independent from all audio data paths.
-
+Le linee `CS` sono indipendenti e vengono utilizzate per selezionare
+un singolo slave alla volta.
 
 ---
 
-# 3. Audio Processor SPI Domain
+## Chip Select
 
-The Audio Processor contains its own SPI interface for external control.
-
-The System Controller uses this interface for:
-
-- DSP configuration
-- parameter updates
-- operational control
-- status reading
-
-
-The Audio Processor also manages its external program memory.
-
-             Audio Processor
-
-    +----------------------+
-    |
-    | SPI MASTER
-    |
-    v
-
-          Audio EEPROM
-
-   DSP Program Memory
-
-
-The System Controller does not directly access the EEPROM during normal operation.
-
-The Audio Processor is responsible for loading its DSP configuration.
-
+| CS | Slave |
+|---|---|
+| `SPI_CODEC_CS` | U5 — TAC5212 |
+| `SPI_DEV_MAN_A_CS` | U34 — MCP23S17 |
+| `SPI_DEV_MAN_B_CS` | U36 — MCP23S17 |
+| `SPI_ADAU1467_CS` | U18 — ADAU1467 |
+| `SPI_SI4684_CS` | U12 — Si4684 |
+| `SPI_W25Q128_CS` | U10 — W25Q128JVS |
+| `SPI_UART_CS` | U30 — SC16IS740 |
 
 ---
 
-# 4. Radio Receiver SPI Domain
+# Private SPI Buses
 
-The Radio Receiver is controlled by the System Controller through its SPI slave interface.
+Alcuni dispositivi dispongono di una memoria SPI dedicata e non fanno
+parte del bus SPI principale dell'ESP32.
 
-The System Controller manages:
+## ADAU1467 — Private SPI
 
-- initialization sequence
-- command exchange
-- configuration
-- firmware loading procedure
+| Master | Slave | Dispositivo |
+|---|---|---|
+| U18 | U24 | 25AA1024-I/SM |
 
+**Master:** ADAU1467  
+**Slave:** 25AA1024 SPI EEPROM
 
-             System Controller
+La memoria U24 utilizza il bus SPI privato dell'ADAU1467.
 
-          SPI MASTER
-
-               |
-
-             Radio Receiver
-
-               |
-
-    Internal Firmware Management
-
-               |
-
-          Internal RAM
-
-
-The Radio Receiver remains responsible for its internal operational memory.
-
+U24 **non** è uno slave del bus SPI principale dell'ESP32 e pertanto non
+possiede una linea `CS` appartenente al namespace `SPI_*` del bus principale.
 
 ---
 
-# 5. SPI Bus Isolation Principle
+## Si4684 — Private SPI
 
-The HubAudio architecture intentionally avoids a single shared SPI bus.
+| Master | Slave | Dispositivo |
+|---|---|---|
+| U12 | U27 | W25Q16JW |
 
-The design uses:
+**Master:** Si4684  
+**Slave:** W25Q16JW SPI Flash
 
-          System Controller
+La memoria U27 utilizza il bus SPI privato del Si4684.
 
-      +-------------+
-
-      |             |
-
-   SPI-A          SPI-B
-
-      |             |
-
-  Audio Processor       Radio Receiver
-
-
-Advantages:
-
-- no chip-select conflicts
-- independent timing
-- reduced electrical loading
-- easier firmware management
-- simpler debugging
-
+U27 **non** è uno slave del bus SPI principale dell'ESP32 e pertanto non
+possiede una linea `CS` appartenente al namespace `SPI_*` del bus principale.
 
 ---
 
-# 6. Boot Sequence
+# SPI Topology
 
-The expected startup sequence is:
-
-
-
-Power ON
-
-|
-
-System Controller boot
-
-|
-
-Initialize SPI buses
-
-|
-
-Configure Audio Processor
-
-|
-+--> ADAU loads DSP program from Audio EEPROM
-
-|
-
-Configure Radio Receiver
-
-|
-+--> Firmware initialization
-
-|
-
-Enable Audio Domain
-
-|
-
-Audio Processor starts audio processing
+```text
+                         ESP32-S31-WROOM-3
+                              U11
+                               │
+                 ┌─────────────┼─────────────┐
+                 │             │             │
+             SPI_SCLK      SPI_MOSI      SPI_MISO
+                 │             │             │
+       ┌─────────┴─────────────┴─────────────┴─────────┐
+       │                 SPI MAIN BUS                  │
+       │                                                │
+       ├── U5   TAC5212       ← SPI_CODEC_CS            │
+       ├── U34  MCP23S17      ← SPI_DEV_MAN_A_CS        │
+       ├── U36  MCP23S17      ← SPI_DEV_MAN_B_CS        │
+       ├── U18  ADAU1467      ← SPI_ADAU1467_CS         │
+       ├── U12  Si4684        ← SPI_SI4684_CS           │
+       ├── U10  W25Q128JVS    ← SPI_W25Q128_CS          │
+       └── U30  SC16IS740     ← SPI_UART_CS             │
+                                                        │
+       └────────────────────────────────────────────────┘
 
 
+        PRIVATE SPI BUS                    PRIVATE SPI BUS
+        ADAU1467                           Si4684
+           U18                                U12
+            │                                  │
+            │ SPI                              │ SPI
+            ▼                                  ▼
+     U24 25AA1024                         U27 W25Q16JW
+SPI Slave Summary
+Bus	Master	Slave	Device
+Main SPI	ESP32 U11	U5	TAC5212
+Main SPI	ESP32 U11	U34	MCP23S17
+Main SPI	ESP32 U11	U36	MCP23S17
+Main SPI	ESP32 U11	U18	ADAU1467
+Main SPI	ESP32 U11	U12	Si4684
+Main SPI	ESP32 U11	U10	W25Q128JVS
+Main SPI	ESP32 U11	U30	SC16IS740
+Private SPI	ADAU1467 U18	U24	25AA1024
+Private SPI	Si4684 U12	U27	W25Q16JW
+Design Rules
+SPI_SCLK, SPI_MOSI e SPI_MISO del bus principale sono condivisi tra
+tutti gli slave del bus.
+Ogni slave del bus principale deve avere una propria linea CS.
+Deve essere attivo un solo CS alla volta durante una transazione SPI.
+U24 e U27 non appartengono al bus SPI principale.
+U24 è controllata direttamente dall'ADAU1467.
+U27 è controllata direttamente dal Si4684.
+I Chip Select dei bus privati non devono essere confusi con i CS
+del bus SPI principale dell'ESP32.
+La nomenclatura SPI_*_CS identifica esclusivamente le linee Chip Select
+del bus SPI principale.
+Main SPI Chip Select Map
+SPI_CODEC_CS       → U5   TAC5212
+SPI_DEV_MAN_A_CS   → U34  MCP23S17
+SPI_DEV_MAN_B_CS   → U36  MCP23S17
+SPI_ADAU1467_CS    → U18  ADAU1467
+SPI_SI4684_CS      → U12  Si4684
+SPI_W25Q128_CS     → U10  W25Q128JVS
+SPI_UART_CS        → U30  SC16IS740
+Stato
 
----
+SPI principale: 7 slave.
 
-# 7. Separation Between Domains
+SPI privato ADAU1467: 1 slave.
 
+SPI privato Si4684: 1 slave.
 
-## Control Domain
+Totale dispositivi SPI: 9.
 
+Master SPI principale: ESP32-S31-WROOM-3.
 
-System Controller
-
-|
-|
-
-SPI
-
-|
-
-Peripheral configuration
-
-
-
-## Audio Domain
-
-
-Audio Sources
-
-|
-|
-
-I2S
-
-|
-
-Audio Processor
-
-|
-
-Audio Outputs
-
-
-
-The two domains interact only through configuration and status information.
-
-
----
-
-# 8. Design Rules
-
-SPI signals require:
-
-- controlled routing
-- clean reference plane
-- appropriate termination where required
-- separation from high-speed clock signals
-
-
-Critical signals:
-
-- SCLK
-- MOSI
-- MISO
-- CS
-
-
----
-
-# 9. Design Philosophy
-
-The System Controller is the system coordinator.
-
-The Audio Processor is the audio processor.
-
-The Radio Receiver is a specialized audio peripheral.
-
-Each component controls its own functional domain while remaining part of the
-complete HubAudio system.
+Master SPI privati: ADAU1467 e Si4684.

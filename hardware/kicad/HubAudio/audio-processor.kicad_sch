@@ -3632,6 +3632,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MIKILAB_power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -3728,6 +3843,145 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:VD"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VD"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VD\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VD_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VD_1_1"
+				(pin power_in line
+					(at 0 0 90)
 					(length 0)
 					(name ""
 						(effects
@@ -4017,6 +4271,126 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd9ba3ef-e582-4f1a-8bfb-b1a939e78a93")
+	)
+	(no_connect
+		(at 153.67 41.91)
+		(uuid "00317ed1-9825-43b5-90bf-44837d950042")
+	)
+	(no_connect
+		(at 153.67 34.29)
+		(uuid "1c7c09d9-b827-4381-beca-7043142407f4")
+	)
+	(no_connect
+		(at 92.71 80.01)
+		(uuid "1db72064-af14-49cb-b6d7-c0a807ab8871")
+	)
+	(no_connect
+		(at 92.71 128.27)
+		(uuid "1fb6d8fd-9550-4c74-8ce6-ed42cb76ca7b")
+	)
+	(no_connect
+		(at 153.67 130.81)
+		(uuid "200e8f02-9bfe-4c57-aac2-76851feb06ff")
+	)
+	(no_connect
+		(at 153.67 54.61)
+		(uuid "2c23f79a-9b9d-4bff-86a0-f9d21d5b4797")
+	)
+	(no_connect
+		(at 92.71 77.47)
+		(uuid "2f87ae66-f6ff-4158-9db8-fbb16a637bef")
+	)
+	(no_connect
+		(at 92.71 72.39)
+		(uuid "35eae170-5ece-41ae-948c-db9071264225")
+	)
+	(no_connect
+		(at 153.67 72.39)
+		(uuid "4079f1b0-b925-4ec7-908f-4d7652ea1e01")
+	)
+	(no_connect
+		(at 92.71 130.81)
+		(uuid "407f0bd3-e377-4ea9-b6b7-ef3cb691a8c0")
+	)
+	(no_connect
+		(at 153.67 59.69)
+		(uuid "46723720-c06a-492a-91ec-c512a9d4664e")
+	)
+	(no_connect
+		(at 153.67 44.45)
+		(uuid "53be061d-ce25-40aa-878b-fd70c2c7b4f5")
+	)
+	(no_connect
+		(at 92.71 125.73)
+		(uuid "5cdf875e-cd32-456e-951c-6cc3001ef470")
+	)
+	(no_connect
+		(at 92.71 82.55)
+		(uuid "6ceb655a-95e9-4da1-a366-fdfcbb1da07a")
+	)
+	(no_connect
+		(at 153.67 62.23)
+		(uuid "6f96aeca-7855-49e8-84b5-0ca5ba590f09")
+	)
+	(no_connect
+		(at 153.67 69.85)
+		(uuid "7028ffec-03c7-4fb1-ad80-524862395948")
+	)
+	(no_connect
+		(at 153.67 49.53)
+		(uuid "714c1d25-d0ce-4c19-9ec9-fe3905034055")
+	)
+	(no_connect
+		(at 92.71 85.09)
+		(uuid "796fbeba-bef3-4073-994b-9537b32ed3fd")
+	)
+	(no_connect
+		(at 92.71 74.93)
+		(uuid "8e72f85a-8aaa-45d0-af18-c373499da7f7")
+	)
+	(no_connect
+		(at 153.67 110.49)
+		(uuid "90900899-2629-4e7f-9032-126c3bd6894c")
+	)
+	(no_connect
+		(at 153.67 113.03)
+		(uuid "9da7c54e-0069-4ea8-b92a-7f302d11c69e")
+	)
+	(no_connect
+		(at 92.71 90.17)
+		(uuid "a911cad2-c042-49a6-952b-18f636993e29")
+	)
+	(no_connect
+		(at 153.67 46.99)
+		(uuid "b353d905-0524-4271-ab85-83a64fdb4820")
+	)
+	(no_connect
+		(at 153.67 133.35)
+		(uuid "ba392160-6190-4abb-a0b4-6515582457d7")
+	)
+	(no_connect
+		(at 153.67 64.77)
+		(uuid "bd764cb4-d07a-42ab-bace-695a6a284e72")
+	)
+	(no_connect
+		(at 92.71 87.63)
+		(uuid "bef4418f-fe63-47cd-bf61-a51d8e83ae90")
+	)
+	(no_connect
+		(at 153.67 67.31)
+		(uuid "d3259d48-48fc-459c-8902-5b5845b3c756")
+	)
+	(no_connect
+		(at 153.67 36.83)
+		(uuid "e9008b4e-57ec-4475-ae30-686d59943c74")
+	)
+	(no_connect
+		(at 153.67 107.95)
+		(uuid "f752114b-e1c6-4d4c-b32b-78d556c98ae5")
+	)
+	(no_connect
+		(at 153.67 57.15)
+		(uuid "f9ff7d65-17db-401a-94c1-ebf0914a5d50")
 	)
 	(wire
 		(pts
@@ -5990,54 +6364,6 @@
 			)
 		)
 	)
-	(global_label "3V3_TOS"
-		(shape input)
-		(at 215.9 19.05 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "448cdcff-a010-4356-822a-669a5fabdd3e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 204.932 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "3V3_TOS"
-		(shape input)
-		(at 217.17 49.53 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "551b9262-1d86-43d8-99a8-0bd602da94f3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 206.202 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "SPI_ADAU1467_CS"
 		(shape input)
 		(at 165.1 146.05 0)
@@ -6560,6 +6886,17 @@
 				)
 			)
 		)
+		(property "PNM" "GCM2195C1K562FA16D"
+			(at 77.47 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0358efe4-b5f1-498c-a87a-751f9f907439")
 		)
@@ -6723,7 +7060,18 @@
 				)
 			)
 		)
-		(property "Description" "TCC0805X7R104K500DT"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 46.99 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 46.99 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -6806,6 +7154,17 @@
 			)
 		)
 		(property "Description" "CL21C220JBANNNC"
+			(at 59.69 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "CL21C220JBANNNC"
 			(at 59.69 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -6964,7 +7323,18 @@
 				)
 			)
 		)
-		(property "Description" "TCC0805X7R104K500DT"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 59.69 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 59.69 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -7012,7 +7382,7 @@
 				)
 			)
 		)
-		(property "Value" "LSQNB160808T470M"
+		(property "Value" "ferrite bead"
 			(at 228.6 16.51 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7044,8 +7414,19 @@
 				)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "LSQNB160808T470M"
 			(at 228.6 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "LSQNB160808T470M"
+			(at 228.6 19.05 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7153,7 +7534,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -7168,7 +7549,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 196.596 105.156 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7200,8 +7581,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 196.85 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 196.85 102.87 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7365,7 +7757,18 @@
 				)
 			)
 		)
-		(property "Description" "CL21A106KAYNNNE"
+		(property "Description" "GRM21BR61E106KA73L"
+			(at 219.71 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR61E106KA73L"
 			(at 219.71 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -7397,7 +7800,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -7412,7 +7815,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 196.596 94.996 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7444,8 +7847,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 196.85 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 196.85 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7531,7 +7945,18 @@
 				)
 			)
 		)
-		(property "Description" "TCC0805X7R104K500DT"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 55.88 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 55.88 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -7613,7 +8038,18 @@
 				)
 			)
 		)
-		(property "Description" "TCC0805X7R104K500DT"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 247.65 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 247.65 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -7645,7 +8081,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -7660,7 +8096,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 48.006 97.536 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7692,8 +8128,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 48.26 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 48.26 95.25 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7856,8 +8303,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RC0805FR-0710KL"
 			(at 224.79 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-0710KL"
+			(at 224.79 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8026,6 +8484,17 @@
 				)
 			)
 		)
+		(property "PNM" "CL21C220JBANNNC"
+			(at 33.02 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cbb2b35b-cb5b-4d5a-b0d7-e4f98f685de1")
 		)
@@ -8047,7 +8516,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -8062,7 +8531,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 180.086 100.076 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8094,8 +8563,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 180.34 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 180.34 97.79 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8132,7 +8612,7 @@
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -8147,7 +8627,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 189.23 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8179,8 +8659,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 189.23 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 189.23 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8217,7 +8708,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -8232,7 +8723,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 48.006 107.696 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8264,8 +8755,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 48.26 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 48.26 105.41 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8291,6 +8793,84 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
 					(reference "RN4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIKILAB_power:PWR_FLAG")
+		(at 236.22 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5081ba09-d84b-4ff1-8236-b969aefba6cf")
+		(property "Reference" "#FLG019"
+			(at 236.22 47.625 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 236.22 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 236.22 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42a8f96b-887c-4d60-bfd5-3d1706bc77d1")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#FLG019")
 					(unit 1)
 				)
 			)
@@ -8352,7 +8932,18 @@
 				)
 			)
 		)
-		(property "Description" "CL21A106KAYNNNE"
+		(property "Description" "GRM21BR61E106KA73L"
+			(at 236.22 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR61E106KA73L"
 			(at 236.22 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -8434,7 +9025,18 @@
 				)
 			)
 		)
-		(property "Description" "TCC0805X7R104K500DT"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 247.65 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 247.65 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -8637,7 +9239,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "100"
 			(at 86.868 171.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8670,8 +9272,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RC0805FR-07100RL"
 			(at 87.63 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-07100RL"
+			(at 87.63 171.45 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8751,7 +9364,18 @@
 				)
 			)
 		)
-		(property "Description" "TCC0805X7R104K500DT"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 50.8 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 50.8 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -8783,7 +9407,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -8798,7 +9422,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 181.356 89.916 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8830,8 +9454,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 181.61 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 181.61 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8917,7 +9552,18 @@
 				)
 			)
 		)
-		(property "Description" "TCC0805X7R104K500DT"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 29.21 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 29.21 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -8949,7 +9595,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -8964,7 +9610,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 180.086 79.756 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8996,8 +9642,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 180.34 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 180.34 77.47 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9023,6 +9680,84 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
 					(reference "RN2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIKILAB_power:PWR_FLAG")
+		(at 236.22 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6fc2b8a6-74d9-445d-88bd-d90b9a66858f")
+		(property "Reference" "#FLG018"
+			(at 236.22 17.145 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 236.22 13.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 236.22 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ed9ae99c-4a5c-4d26-be51-5dd73911738e")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#FLG018")
 					(unit 1)
 				)
 			)
@@ -9237,7 +9972,18 @@
 				)
 			)
 		)
-		(property "Description" "TCC0805X7R104K500DT"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 55.88 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 55.88 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -9269,7 +10015,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -9284,7 +10030,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 48.006 117.856 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9316,8 +10062,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 48.26 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 48.26 115.57 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9449,7 +10206,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100NF"
+		(property "Value" "100nF"
 			(at 87.63 24.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9482,7 +10239,18 @@
 				)
 			)
 		)
-		(property "Description" "TCC0805X7R104K500DT"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 83.82 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 83.82 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -9797,7 +10565,7 @@
 				)
 			)
 		)
-		(property "Description" "Microchip Serial EEPROM Memory 1Mbit 250ns 1.8 to 5.5V 8-Pin SOIJ | Microchip Technology Inc. 25AA1024-I/SM"
+		(property "Description" "25AA1024-I_SM"
 			(at 243.84 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -9893,6 +10661,17 @@
 				(justify bottom)
 			)
 		)
+		(property "PNM" "25AA1024-I_SM"
+			(at 243.84 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "b84adb4b-df12-40b2-b79b-890bf92f96cc")
 		)
@@ -9948,7 +10727,7 @@
 				)
 			)
 		)
-		(property "Value" "LSQNB160808T470M"
+		(property "Value" "ferrite bead"
 			(at 228.6 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9980,8 +10759,19 @@
 				)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "LSQNB160808T470M"
 			(at 228.6 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "LSQNB160808T470M"
+			(at 228.6 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10145,8 +10935,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RC0805FR-0710KL"
 			(at 207.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-0710KL"
+			(at 207.01 144.78 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10254,7 +11055,7 @@
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10269,7 +11070,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 189.23 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10301,8 +11102,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 189.23 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 189.23 80.01 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10339,7 +11151,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10354,7 +11166,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 197.866 84.836 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10386,8 +11198,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 198.12 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 198.12 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10649,7 +11472,18 @@
 				)
 			)
 		)
-		(property "Description" "CL21A106KAYNNNE"
+		(property "Description" "GRM21BR61E106KA73L"
+			(at 236.22 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR61E106KA73L"
 			(at 236.22 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -10681,7 +11515,7 @@
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10696,7 +11530,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 55.88 110.49 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10728,8 +11562,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 55.88 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 55.88 107.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10766,7 +11611,7 @@
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10781,7 +11626,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 55.88 120.65 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10813,8 +11658,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 55.88 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 55.88 118.11 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10851,7 +11707,7 @@
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10866,7 +11722,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 189.23 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10898,8 +11754,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 189.23 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 189.23 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10936,7 +11803,7 @@
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10951,7 +11818,7 @@
 				)
 			)
 		)
-		(property "Value" "0 OHM"
+		(property "Value" "33"
 			(at 55.88 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10983,8 +11850,19 @@
 				)
 			)
 		)
-		(property "Description" "2D03WGJ0000T5E"
+		(property "Description" "YC164-JR-0733RL"
 			(at 55.88 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "YC164-JR-0733RL"
+			(at 55.88 97.79 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11148,7 +12026,18 @@
 				)
 			)
 		)
-		(property "Description" "TCC0805X7R104K500DT"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 38.1 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 38.1 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -11169,6 +12058,85 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
 					(reference "C78")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 217.17 49.53 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf6f2475-775c-47bd-9e36-eb7e25493327")
+		(property "Reference" "#PWR0198"
+			(at 220.98 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_TOS"
+			(at 213.36 49.5299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 217.17 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87fb439c-04d0-4b65-a986-71b096b744dd")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0198")
 					(unit 1)
 				)
 			)
@@ -11230,7 +12198,18 @@
 				)
 			)
 		)
-		(property "Description" "CL21A106KAYNNNE"
+		(property "Description" "GRM21BR61E106KA73L"
+			(at 219.71 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR61E106KA73L"
 			(at 219.71 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -11262,7 +12241,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -11312,6 +12291,17 @@
 		)
 		(property "Description" "0805W8F4301T5E"
 			(at 77.47 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "0805W8F4301T5E"
+			(at 77.47 143.51 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11391,7 +12381,18 @@
 				)
 			)
 		)
-		(property "Description" "TCC0805X7R104K500DT"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 45.72 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 45.72 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -11471,8 +12472,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RC0805FR-074K7L"
 			(at 260.35 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-074K7L"
+			(at 260.35 63.5 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11563,6 +12575,17 @@
 				)
 			)
 		)
+		(property "PNM" "08055A151FAT2A"
+			(at 85.09 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cc2637a4-1eb9-49d9-844f-9a4fc2a1f34f")
 		)
@@ -11633,7 +12656,18 @@
 				)
 			)
 		)
-		(property "Description" "TCC0805X7R104K500DT"
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 41.91 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
 			(at 41.91 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -11715,7 +12749,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "Audio DSPs 32bit SigmaDSP Audio 24K/80K"
+		(property "Description" "ADAU1467WBCPZ300R"
 			(at 92.71 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -11820,6 +12854,17 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "PNM" "ADAU1467WBCPZ300R"
+			(at 92.71 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"
@@ -12093,6 +13138,85 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
 					(reference "U18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 215.9 19.05 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef265409-ffbb-407e-99ce-63329916613e")
+		(property "Reference" "#PWR0196"
+			(at 219.71 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_TOS"
+			(at 212.09 19.0499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 215.9 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a285751-3987-4ef4-aded-b75bcd42f850")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0196")
 					(unit 1)
 				)
 			)

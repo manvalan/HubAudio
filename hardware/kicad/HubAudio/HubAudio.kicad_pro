@@ -260,7 +260,36 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|685800|622300|785f2c25-acb1-472d-acc0-e1cab8fec402|9abfd2d8-7ee0-413c-a1c8-43a9e9bc6128|/841d8022-3a94-443e-97aa-a99a12889684/e2542609-1b92-4554-8024-978841ad00fe|/841d8022-3a94-443e-97aa-a99a12889684/e2542609-1b92-4554-8024-978841ad00fe|/841d8022-3a94-443e-97aa-a99a12889684/e2542609-1b92-4554-8024-978841ad00fe",
+        ""
+      ],
+      [
+        "pin_to_pin|698500|939800|7b8823a2-1477-435a-a959-685c5902fa3b|90ac4f69-3dba-4e31-a249-c1acb1de964a|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab",
+        ""
+      ],
+      [
+        "pin_to_pin|698500|965200|90ac4f69-3dba-4e31-a249-c1acb1de964a|b28aca99-2435-4594-aa2d-04511d1d55b0|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab",
+        ""
+      ],
+      [
+        "pin_to_pin|889000|254000|91d3a23a-d736-4642-96f0-baac86cfb42f|3e42570a-20d3-4c77-8538-4b5e1602fb31|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab",
+        ""
+      ],
+      [
+        "pin_to_pin|889000|381000|976386d4-8920-4cbc-95cc-5f9f6df47b29|544d8c64-8045-4f5f-800f-ba9db5369f74|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab",
+        ""
+      ],
+      [
+        "pin_to_pin|889000|406400|544d8c64-8045-4f5f-800f-ba9db5369f74|e7e5e0db-e45e-482e-b906-820655170c35|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab",
+        ""
+      ],
+      [
+        "power_pin_not_driven|889000|355600|f24317f3-949b-4017-ab0a-bbd04ae8b759|00000000-0000-0000-0000-000000000000|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -517,20 +546,7 @@
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "unconnected-(R1-Pad1)": [
-        "3V3_DIGITAL"
-      ],
-      "unconnected-(R10-Pad2)": [
-        "3V3_DIGITAL"
-      ],
-      "unconnected-(R3-Pad1)": [
-        "3V3_DIGITAL"
-      ],
-      "unconnected-(R7-Pad2)": [
-        "3V3_DIGITAL"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -767,6 +783,42 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "OC_FARNELL",
+          "name": "OC_FARNELL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SUPPLIER",
+          "name": "SUPPLIER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PNM",
+          "name": "PNM",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "OC_NEWARK",
+          "name": "OC_NEWARK",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PN",
+          "name": "SNAPEDA_PN",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -817,7 +869,7 @@
         "uuid": "841d8022-3a94-443e-97aa-a99a12889684"
       }
     ],
-    "used_designators": "J_BAT1,IC1,Z1,REF1,J_POW_BTN1,Q10-13,BOOT1,RN1-10,Y1-3,D1-18,#PWR1-193,U1-36,C1-175,FB1-4,FB14-15,SW1-2,X1,L1-20,RESET1,J1-15,TP3-8,JP3-4,R1-74,R82,R85-121,R130-132",
+    "used_designators": "#FLG1-25,J_BAT1,IC1,Z1,REF1,J_POW_BTN1,Q10-13,BOOT1,RN1-10,Y1-3,D1-18,#PWR1-314,U1-40,C1-194,FB1-4,FB14-15,SW1-2,X1,L1-24,RESET1,J1-15,TP3-8,JP3-4,R1-121,R130-132",
     "variants": []
   },
   "sheets": [
@@ -834,12 +886,16 @@
       "PowerDistribution"
     ],
     [
-      "73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1",
-      "AudioProcessor"
+      "742c418a-6d63-4161-86e8-dcba5886fcf4",
+      "PowerDistribution_2"
     ],
     [
       "f8fd2832-13ed-4270-9e98-2ba7eddd8eec",
       "Main Controller"
+    ],
+    [
+      "73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1",
+      "AudioProcessor"
     ],
     [
       "d420ee58-604a-4bed-a2ea-d2f985c9aaa0",
@@ -851,7 +907,7 @@
     ],
     [
       "81d9e142-f3fa-46a0-96de-196a5f9efcbd",
-      "Coder"
+      "Codec"
     ],
     [
       "19d2c6b9-23fc-454e-a8be-1c2c66c2d1f5",
@@ -864,10 +920,6 @@
     [
       "3648ee4f-401f-4d8b-b4da-4aabdf3a7fdf",
       "Antenna"
-    ],
-    [
-      "742c418a-6d63-4161-86e8-dcba5886fcf4",
-      "AudioDomainController"
     ],
     [
       "e2542609-1b92-4554-8024-978841ad00fe",

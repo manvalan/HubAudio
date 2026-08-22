@@ -5,6 +5,16 @@
 	(uuid "841d8022-3a94-443e-97aa-a99a12889684")
 	(paper "A4")
 	(lib_symbols)
+	(text ".global 0"
+		(exclude_from_sim no)
+		(at 58.42 139.954 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fac08d31-ec59-4aa6-a235-3aabea6446ef")
+	)
 	(sheet
 		(at 85.09 25.4)
 		(size 43.18 24.13)
@@ -92,7 +102,7 @@
 		(instances
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684"
-					(page "9")
+					(page "10")
 				)
 			)
 		)
@@ -138,7 +148,7 @@
 		(instances
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684"
-					(page "11")
+					(page "12")
 				)
 			)
 		)
@@ -184,7 +194,7 @@
 		(instances
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684"
-					(page "10")
+					(page "11")
 				)
 			)
 		)
@@ -230,7 +240,7 @@
 		(instances
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684"
-					(page "4")
+					(page "6")
 				)
 			)
 		)
@@ -251,7 +261,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "742c418a-6d63-4161-86e8-dcba5886fcf4")
-		(property "Sheetname" "AudioDomainController"
+		(property "Sheetname" "PowerDistribution_2"
 			(at 26.67 102.1584 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -287,7 +297,7 @@
 		(instances
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684"
-					(page "12")
+					(page "4")
 				)
 			)
 		)
@@ -333,7 +343,7 @@
 		(instances
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684"
-					(page "7")
+					(page "8")
 				)
 			)
 		)
@@ -354,7 +364,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "81d9e142-f3fa-46a0-96de-196a5f9efcbd")
-		(property "Sheetname" "Coder"
+		(property "Sheetname" "Codec"
 			(at 85.09 65.3284 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -379,7 +389,7 @@
 		(instances
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684"
-					(page "8")
+					(page "9")
 				)
 			)
 		)
@@ -471,7 +481,7 @@
 		(instances
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684"
-					(page "6")
+					(page "7")
 				)
 			)
 		)
