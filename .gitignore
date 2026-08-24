@@ -1,0 +1,16 @@
+
+# Local datasheets — not committed
+datasheets/
+
+# KiCad generated / local files
+**/~*.lck
+**/*.lck
+**/_restore_backup_*/
+
+# Generated reports / exports
+hardware/kicad/HubAudio/ERC.rpt
+hardware/kicad/HubAudio/ERC.txt
+hardware/kicad/HubAudio/*.asc
+hardware/kicad/HubAudio/*.csv
+hardware/kicad/HubAudio/export_project_*.csv
+

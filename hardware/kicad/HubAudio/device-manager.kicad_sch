@@ -1244,12 +1244,6 @@
 		(uuid "29268cbe-7ce8-4d6d-b346-0ac37a2aa84e")
 	)
 	(junction
-		(at 228.6 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2e0fed15-85cc-4a1b-aa8d-7ca842f896e0")
-	)
-	(junction
 		(at 123.19 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1478,6 +1472,10 @@
 		(uuid "71bdeacf-ff88-40c2-ace0-f9302bc18847")
 	)
 	(no_connect
+		(at 228.6 50.8)
+		(uuid "8d78fa52-57a8-42f2-89f5-040f6e6eab3b")
+	)
+	(no_connect
 		(at 256.54 92.71)
 		(uuid "a77a42e4-2b52-4fda-a309-59c7613790c6")
 	)
@@ -1504,16 +1502,6 @@
 			(type default)
 		)
 		(uuid "0490f46e-da46-4ff4-9f93-64d1c375303e")
-	)
-	(wire
-		(pts
-			(xy 228.6 50.8) (xy 228.6 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e2cc0be-e504-4eaa-895d-89f0d5ba9576")
 	)
 	(wire
 		(pts
@@ -2117,7 +2105,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 57.15) (xy 257.81 57.15)
+			(xy 224.79 57.15) (xy 257.81 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2304,16 +2292,6 @@
 			(type default)
 		)
 		(uuid "92e559ec-4c34-4a06-95e6-be15dac6b162")
-	)
-	(wire
-		(pts
-			(xy 224.79 57.15) (xy 228.6 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96cfac1f-014c-4a71-ba8d-9ee7045ec562")
 	)
 	(wire
 		(pts
@@ -3011,7 +2989,7 @@
 			)
 		)
 	)
-	(global_label "BT1035_RESET"
+	(global_label "BT1058_RESET"
 		(shape output)
 		(at 257.81 54.61 0)
 		(fields_autoplaced yes)
@@ -3563,7 +3541,7 @@
 			)
 		)
 	)
-	(global_label "BT1035_SYSCTRL"
+	(global_label "BT1058_SYSCTRL"
 		(shape output)
 		(at 257.81 57.15 0)
 		(fields_autoplaced yes)

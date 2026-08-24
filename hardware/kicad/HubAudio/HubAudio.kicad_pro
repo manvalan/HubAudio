@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 1.27
+          "drill": 2.2,
+          "height": 2.2,
+          "width": 2.2
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -261,6 +261,26 @@
   },
   "erc": {
     "erc_exclusions": [
+      [
+        "pin_not_driven|1028700|571500|5aed3465-8802-4bb1-af20-9beded65052b|00000000-0000-0000-0000-000000000000|/841d8022-3a94-443e-97aa-a99a12889684/745494b9-3131-4c41-9bde-4edc5dc71949|/841d8022-3a94-443e-97aa-a99a12889684/745494b9-3131-4c41-9bde-4edc5dc71949|",
+        ""
+      ],
+      [
+        "pin_to_pin|1054100|1016000|90ac4f69-3dba-4e31-a249-c1acb1de964a|b28aca99-2435-4594-aa2d-04511d1d55b0|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab",
+        ""
+      ],
+      [
+        "pin_to_pin|1054100|990600|7b8823a2-1477-435a-a959-685c5902fa3b|90ac4f69-3dba-4e31-a249-c1acb1de964a|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab",
+        ""
+      ],
+      [
+        "pin_to_pin|1993900|622300|9abfd2d8-7ee0-413c-a1c8-43a9e9bc6128|610e2897-31d2-4893-bcde-6d8bb47ccbf4|/841d8022-3a94-443e-97aa-a99a12889684/e2542609-1b92-4554-8024-978841ad00fe|/841d8022-3a94-443e-97aa-a99a12889684/e2542609-1b92-4554-8024-978841ad00fe|/841d8022-3a94-443e-97aa-a99a12889684/745494b9-3131-4c41-9bde-4edc5dc71949",
+        ""
+      ],
+      [
+        "pin_to_pin|533400|254000|f67bcafa-68b0-43ba-9d50-0c7061228323|7ae32c33-d2a5-47e8-9d37-526d78b295da|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab|/841d8022-3a94-443e-97aa-a99a12889684/19d2c6b9-23fc-454e-a8be-1c2c66c2d1f5",
+        ""
+      ],
       [
         "pin_to_pin|685800|622300|785f2c25-acb1-472d-acc0-e1cab8fec402|9abfd2d8-7ee0-413c-a1c8-43a9e9bc6128|/841d8022-3a94-443e-97aa-a99a12889684/e2542609-1b92-4554-8024-978841ad00fe|/841d8022-3a94-443e-97aa-a99a12889684/e2542609-1b92-4554-8024-978841ad00fe|/841d8022-3a94-443e-97aa-a99a12889684/e2542609-1b92-4554-8024-978841ad00fe",
         ""
@@ -819,6 +839,12 @@
           "label": "SNAPEDA_PN",
           "name": "SNAPEDA_PN",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -869,7 +895,7 @@
         "uuid": "841d8022-3a94-443e-97aa-a99a12889684"
       }
     ],
-    "used_designators": "#FLG1-25,J_BAT1,IC1,Z1,REF1,J_POW_BTN1,Q10-13,BOOT1,RN1-10,Y1-3,D1-18,#PWR1-314,U1-40,C1-194,FB1-4,FB14-15,SW1-2,X1,L1-24,RESET1,J1-15,TP3-8,JP3-4,R1-121,R130-132",
+    "used_designators": "#FLG1-25,J_BAT1,IC1,Z1,REF1,J_POW_BTN1,Q10-13,BOOT1,RN1-10,Y1-4,D1-18,#PWR1-340,U1-40,C1-194,FB1-4,FB14-15,SW1-2,X1,L1-24,RESET1,J1-15,TP3-8,JP3-4,R1-121,R130-132",
     "variants": []
   },
   "sheets": [

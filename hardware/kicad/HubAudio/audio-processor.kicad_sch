@@ -4015,12 +4015,6 @@
 		(uuid "19247ab9-83d6-4b81-beb8-efe1025e0115")
 	)
 	(junction
-		(at 50.8 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1c3d7489-3a8d-4065-9828-68ab2691400a")
-	)
-	(junction
 		(at 236.22 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4093,6 +4087,12 @@
 		(uuid "4ea65aee-8162-40a1-8540-5fd9be360fc7")
 	)
 	(junction
+		(at 203.2 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5048174e-24e7-4631-a367-4b3405654b7f")
+	)
+	(junction
 		(at 46.99 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4103,6 +4103,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "599327d4-e301-4e8f-908d-df397fba0573")
+	)
+	(junction
+		(at 262.89 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a3b02f0-d5d6-4955-b750-3e966cd41b95")
 	)
 	(junction
 		(at 224.79 139.7)
@@ -4141,12 +4147,6 @@
 		(uuid "7e8eda48-99fe-476c-81b8-50a9b119e697")
 	)
 	(junction
-		(at 203.2 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7fde8c7b-824d-4351-85be-943bae5388af")
-	)
-	(junction
 		(at 29.21 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4175,6 +4175,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8dcd8fdd-3432-492d-8797-95dc79eb07ee")
+	)
+	(junction
+		(at 50.8 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91708f2e-a66b-457b-95c4-fadb652c04ca")
 	)
 	(junction
 		(at 219.71 49.53)
@@ -4309,10 +4315,6 @@
 		(uuid "4079f1b0-b925-4ec7-908f-4d7652ea1e01")
 	)
 	(no_connect
-		(at 92.71 130.81)
-		(uuid "407f0bd3-e377-4ea9-b6b7-ef3cb691a8c0")
-	)
-	(no_connect
 		(at 153.67 59.69)
 		(uuid "46723720-c06a-492a-91ec-c512a9d4664e")
 	)
@@ -4414,16 +4416,6 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 34.29) (xy 50.8 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0dc07c7e-96b5-44d6-bd55-d7b919ec0705")
-	)
-	(wire
-		(pts
 			(xy 185.42 87.63) (xy 203.2 87.63)
 		)
 		(stroke
@@ -4451,6 +4443,16 @@
 			(type default)
 		)
 		(uuid "127eb2f7-27b1-4883-a3ac-002b43b84de8")
+	)
+	(wire
+		(pts
+			(xy 266.7 134.62) (xy 262.89 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13963994-7361-4afe-a5af-baa5b3345198")
 	)
 	(wire
 		(pts
@@ -4634,16 +4636,6 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 134.62) (xy 275.59 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "397c702f-6252-41e9-830f-b82f28a9a7ce")
-	)
-	(wire
-		(pts
 			(xy 41.91 31.75) (xy 92.71 31.75)
 		)
 		(stroke
@@ -4661,6 +4653,16 @@
 			(type default)
 		)
 		(uuid "3bfa4131-688d-4be4-8070-4e7a564d0cc5")
+	)
+	(wire
+		(pts
+			(xy 25.4 34.29) (xy 50.8 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4194b8ca-35cc-495d-8c01-7cc8e5f76eb0")
 	)
 	(wire
 		(pts
@@ -4914,16 +4916,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 132.08) (xy 224.79 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6443590a-eb69-4cda-ba0d-b7dd0ea7f1a2")
-	)
-	(wire
-		(pts
 			(xy 153.67 140.97) (xy 165.1 140.97)
 		)
 		(stroke
@@ -4951,6 +4943,16 @@
 			(type default)
 		)
 		(uuid "68d0260c-31a6-4215-a918-741811b38106")
+	)
+	(wire
+		(pts
+			(xy 262.89 134.62) (xy 261.62 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69d6ae87-a599-450f-9e0f-77cb4c19f24b")
 	)
 	(wire
 		(pts
@@ -5584,16 +5586,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 133.35) (xy 203.2 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8a2fb7d-4999-4a67-b68e-a41697fd8cff")
-	)
-	(wire
-		(pts
 			(xy 25.4 41.91) (xy 55.88 41.91)
 		)
 		(stroke
@@ -5691,6 +5683,16 @@
 			(type default)
 		)
 		(uuid "dceb1fdb-0e6d-40e9-842c-2c15df156a2e")
+	)
+	(wire
+		(pts
+			(xy 41.91 130.81) (xy 92.71 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd2c2856-08f4-4aa8-bcef-766d46c9548f")
 	)
 	(wire
 		(pts
@@ -5912,16 +5914,6 @@
 		)
 		(uuid "fed3c7b6-dfe3-4484-a3b7-6f867a3f7c4f")
 	)
-	(label "3V3_ADAU1467"
-		(at 26.67 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1227c2a3-b00c-4a9e-833d-fc50de33969c")
-	)
 	(label "EEPROM_MISO"
 		(at 261.62 139.7 0)
 		(effects
@@ -5931,16 +5923,6 @@
 			(justify left bottom)
 		)
 		(uuid "1b1f3b32-8d03-4b69-86b7-22b6b9f04dbb")
-	)
-	(label "3V3_ADAU1467"
-		(at 26.67 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "226475a5-cf8a-4ca4-907b-c8cc429c53b1")
 	)
 	(label "EEPROM_CS"
 		(at 166.37 118.11 0)
@@ -5952,16 +5934,6 @@
 		)
 		(uuid "43ff22a4-ab7b-4433-b123-0bb116b3d8b4")
 	)
-	(label "3V3_ADAU1467"
-		(at 203.2 139.7 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "59fd5eac-3dca-411c-a061-ddc941d6c867")
-	)
 	(label "EEPROM_MISO"
 		(at 166.37 125.73 0)
 		(effects
@@ -5972,26 +5944,6 @@
 		)
 		(uuid "5d3c9dc1-61b1-4342-83c6-bc77e681e545")
 	)
-	(label "3V3_ADAU1467"
-		(at 26.67 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "60dac43d-a4e6-4004-88ef-34cccb210408")
-	)
-	(label "3V3_ADAU1467"
-		(at 262.89 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "63579a9f-3fdf-48e5-9132-03c7bb681e65")
-	)
 	(label "SPIF_OUT"
 		(at 166.37 29.21 180)
 		(effects
@@ -6001,16 +5953,6 @@
 			(justify right bottom)
 		)
 		(uuid "687c8724-5e0d-4607-806a-44aed2009a37")
-	)
-	(label "1V2_ADAU1467"
-		(at 27.94 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "72bc1fa3-8188-47d8-97e3-0045f615df61")
 	)
 	(label "SPIF_IN"
 		(at 259.08 59.69 180)
@@ -6072,36 +6014,6 @@
 		)
 		(uuid "a8823e19-bf16-436c-9ce2-57178f595f7a")
 	)
-	(label "1V2_ADAU1467"
-		(at 27.94 64.77 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a95bcbc2-7e2b-465c-a8b7-c9db3bbb9f9a")
-	)
-	(label "1V2_ADAU1467"
-		(at 27.94 59.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b4d31d7a-67fc-48dc-9b17-221b6c5e2cd6")
-	)
-	(label "3V3_ADAU1467"
-		(at 212.09 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bf4157ed-7058-4d6a-81b3-ebb37cea0977")
-	)
 	(label "EEPROM_CLK"
 		(at 212.09 147.32 0)
 		(effects
@@ -6132,16 +6044,6 @@
 		)
 		(uuid "db0e1223-3ea1-4520-bf00-21a9ffc083d0")
 	)
-	(label "1V2_ADAU1467"
-		(at 27.94 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "db4f5bb4-1030-4c5b-bb15-140f5d829dbe")
-	)
 	(label "3V3_ADAU1467"
 		(at 26.67 31.75 0)
 		(effects
@@ -6151,16 +6053,6 @@
 			(justify left bottom)
 		)
 		(uuid "e3b37c76-afb2-44c1-988c-d1b19129339f")
-	)
-	(label "3V3_ADAU1467"
-		(at 26.67 34.29 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "eed79ec3-88fe-40c7-9e80-fdcbde803e78")
 	)
 	(label "EEPROM_MOSI"
 		(at 166.37 120.65 0)
@@ -6508,31 +6400,7 @@
 			)
 		)
 	)
-	(global_label "3V3_ADAU1467"
-		(shape input)
-		(at 25.4 31.75 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "99a29177-2922-4eb0-baf4-d713dbe96ca6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 8.3239 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "I2S_OUT_BT1035_SDATA"
+	(global_label "I2S_OUT_BT1058_SDATA"
 		(shape output)
 		(at 203.2 102.87 0)
 		(fields_autoplaced yes)
@@ -6593,30 +6461,6 @@
 		(uuid "ab531208-8871-4be1-8b28-f91da73c9bd7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 19.3911 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "1V2_ADAU1467"
-		(shape input)
-		(at 26.67 57.15 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b3c28059-8c46-42b9-a6d3-462a7fe25109")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 9.5939 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6700,7 +6544,7 @@
 			)
 		)
 	)
-	(global_label "I2S_OUT_BT1035_LRCLK"
+	(global_label "I2S_OUT_BT1058_LRCLK"
 		(shape output)
 		(at 203.2 97.79 0)
 		(fields_autoplaced yes)
@@ -6772,7 +6616,31 @@
 			)
 		)
 	)
-	(global_label "I2S_OUT_BT1035_BCLK"
+	(global_label "I2S_IN_BT1058_SDATA"
+		(shape input)
+		(at 41.91 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cee0e3f1-efcd-46ee-81f0-98616cefb6e6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.363 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "I2S_OUT_BT1058_BCLK"
 		(shape output)
 		(at 203.2 100.33 0)
 		(fields_autoplaced yes)
@@ -8511,6 +8379,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VD")
+		(at 203.2 142.24 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3eeca804-cce0-48c6-a349-022136fff638")
+		(property "Reference" "#PWR0338"
+			(at 207.01 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_ADAU1467"
+			(at 199.39 142.2399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 203.2 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "884bf9c5-8faf-4283-9f05-b2bc8159b6bc")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0338")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Pack02_Split")
 		(at 180.34 97.79 90)
 		(unit 1)
@@ -8971,6 +8918,98 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 262.89 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "567d6c5a-7497-49a4-9836-37f8fdf26b3d")
+		(property "Reference" "C88"
+			(at 263.398 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 259.588 132.842 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 263.8552 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GRM21BR71H104KA01L"
+			(at 262.89 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "GRM21BR71H104KA01L"
+			(at 262.89 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4fe6ebdd-e395-40c8-94c9-f6f46ff0481a")
+		)
+		(pin "2"
+			(uuid "00bc54bc-26a8-40ae-b821-0632213be976")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "C88")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 247.65 22.86 0)
 		(unit 1)
 		(body_style 1)
@@ -9141,6 +9180,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VD")
+		(at 25.4 41.91 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ef52e11-513f-4831-b020-b99d4987d8b1")
+		(property "Reference" "#PWR0333"
+			(at 29.21 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_ADAU1467"
+			(at 21.59 41.9099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 25.4 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5e77280-961e-40b5-b094-025a9fcd0838")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0333")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 146.05 173.99 0)
 		(unit 1)
@@ -9304,6 +9422,85 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
 					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 26.67 59.69 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6839ce9a-f2b8-4062-b12c-e81088d44758")
+		(property "Reference" "#PWR0335"
+			(at 30.48 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1V2_ADAU1467"
+			(at 22.86 59.6899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 26.67 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "791efe8f-df96-417d-8d72-4523266cbd73")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0335")
 					(unit 1)
 				)
 			)
@@ -10355,6 +10552,164 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VD")
+		(at 25.4 39.37 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d313e50-19ae-4c09-9963-7276312bebce")
+		(property "Reference" "#PWR0332"
+			(at 29.21 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_ADAU1467"
+			(at 21.59 39.3699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 25.4 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b2488182-c3e2-4388-b8ba-1352e20c3e2f")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0332")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 26.67 57.15 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c49e078-08d3-4255-903b-33dbe00c9636")
+		(property "Reference" "#PWR0334"
+			(at 30.48 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1V2_ADAU1467"
+			(at 22.86 57.1499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 26.67 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2ae90fb-11db-45f0-85cc-b862f5e531f6")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0334")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 247.65 26.67 0)
 		(unit 1)
@@ -10505,6 +10860,85 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
 					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 25.4 31.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "905558d1-eb99-44cf-a407-d40ef299806d")
+		(property "Reference" "#PWR0329"
+			(at 29.21 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_ADAU1467"
+			(at 21.59 31.7499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 25.4 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cb4acb8c-d839-47be-bf9a-c8d9374d6f75")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0329")
 					(unit 1)
 				)
 			)
@@ -10700,6 +11134,242 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
 					(reference "U24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 224.79 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93294bce-0632-4ba9-a9ce-038ddca100a2")
+		(property "Reference" "#PWR0339"
+			(at 224.79 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_ADAU1467"
+			(at 224.79 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 224.79 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d95471e-8513-4a50-a833-623c28a74393")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0339")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 266.7 134.62 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96d59e5f-dab1-4a79-8bab-1fbe8a5a6c06")
+		(property "Reference" "#PWR0340"
+			(at 262.89 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_ADAU1467"
+			(at 270.51 134.6199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 266.7 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7e78965d-40fc-4bc2-b5ae-c0c0484b052d")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0340")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 26.67 62.23 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "992061ef-500a-4f89-87a7-70104b90d2ea")
+		(property "Reference" "#PWR0336"
+			(at 30.48 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1V2_ADAU1467"
+			(at 22.86 62.2299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 26.67 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4fdcf377-cd6b-47f6-b0d8-e7cb34ce9fe3")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0336")
 					(unit 1)
 				)
 			)
@@ -11972,6 +12642,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VD")
+		(at 26.67 64.77 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1068b03-59e2-4ecd-8c8a-d3370678c421")
+		(property "Reference" "#PWR0337"
+			(at 30.48 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1V2_ADAU1467"
+			(at 22.86 64.7699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 26.67 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d37ba78-ad13-4c80-b385-647887dbc902")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0337")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 38.1 71.12 0)
 		(unit 1)
@@ -12058,6 +12807,83 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
 					(reference "C78")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 262.89 127 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ca92d8cc-30c5-40c0-bd6d-29a2987b1fec")
+		(property "Reference" "#PWR0135"
+			(at 262.89 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 263.144 122.936 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 262.89 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d11a77e-2a07-4532-9c4a-24fc83c29567")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0135")
 					(unit 1)
 				)
 			)
@@ -12321,6 +13147,85 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
 					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 25.4 34.29 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df0c8d6f-88e8-48fb-b195-410dd44a5c60")
+		(property "Reference" "#PWR0330"
+			(at 29.21 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_ADAU1467"
+			(at 21.59 34.2899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 25.4 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6bfa5105-080e-4bdb-8564-db9875692a39")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0330")
 					(unit 1)
 				)
 			)
@@ -13295,6 +14200,85 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
 					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VD")
+		(at 25.4 36.83 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fea9972e-75b2-4bf7-9d3e-6e6ea49febed")
+		(property "Reference" "#PWR0331"
+			(at 29.21 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_ADAU1467"
+			(at 21.59 36.8299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VD\""
+			(at 25.4 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42046298-f388-41e5-b8ed-253390755005")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/73d0f4ca-0905-4c0c-8fc0-a6a4eb5485f1"
+					(reference "#PWR0331")
 					(unit 1)
 				)
 			)

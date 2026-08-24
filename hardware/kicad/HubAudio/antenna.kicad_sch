@@ -4555,30 +4555,6 @@
 				(justify bottom)
 			)
 		)
-		(property "Price" "1.04 USD"
-			(at 25.4 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "None"
-			(at 25.4 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "Check_prices" "https://www.snapeda.com/parts/SJ-435107RS/Same+Sky/view-part/?ref=eda"
 			(at 25.4 80.01 0)
 			(hide yes)
@@ -5107,18 +5083,6 @@
 			)
 		)
 		(property "MF" "Analog Devices"
-			(at 160.02 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "TSSOP-20"
 			(at 160.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -6487,18 +6451,6 @@
 				(justify bottom)
 			)
 		)
-		(property "Package" "S070-3"
-			(at 116.84 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "MPN" "TPD2E007DCKR"
 			(at 116.84 106.68 0)
 			(hide yes)
@@ -6876,18 +6828,6 @@
 			)
 		)
 		(property "MF" "Texas Instruments"
-			(at 59.69 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "S070-3"
 			(at 59.69 107.95 0)
 			(hide yes)
 			(show_name no)

@@ -1,0 +1,291 @@
+# ARCH-PCB-001 — Layer Architecture & Routing Strategy
+
+**Project:** HubAudio  
+**PCB:** 6-layer mixed-signal audio/RF board  
+**Status:** Architecture baseline  
+**Revision:** 1.0  
+**Date:** 2026-08-24
+
+---
+
+## 1. Purpose
+
+This document defines the layer architecture and routing strategy for the HubAudio PCB.
+
+The objectives are:
+
+- minimize EMI and crosstalk;
+- provide short and well-defined return paths for high-speed signals;
+- preserve signal integrity for audio, clock, SPI, USB, Ethernet and RF interfaces;
+- isolate slow control signals from critical high-speed routing;
+- simplify placement and routing decisions;
+- maintain a consistent PCB architecture throughout layout.
+
+The layer assignment is an architectural constraint, not merely a routing preference.
+
+---
+
+## 2. PCB Stackup
+
+The PCB uses a 6-layer stackup with 35 µm copper on all copper layers.
+
+| Layer | Type | Primary Function |
+|---|---|---|
+| **L1 — F.Cu** | Copper | Components + high-speed / critical signals |
+| **L2 — In1.Cu** | Copper | **GND plane** |
+| **L3 — In2.Cu** | Copper | Slow signals / control |
+| **L4 — In3.Cu** | Copper | **POWER plane** |
+| **L5 — In4.Cu** | Copper | **GND plane** |
+| **L6 — B.Cu** | Copper | Components + slow / secondary signals |
+
+### Dielectric structure
+
+| Interface | Dielectric |
+|---|---:|
+| L1 ↔ L2 | 0.10 mm prepreg |
+| L2 ↔ L3 | 0.535 mm core |
+| L3 ↔ L4 | 0.10 mm prepreg |
+| L4 ↔ L5 | 0.535 mm core |
+| L5 ↔ L6 | 0.10 mm prepreg |
+
+Total nominal PCB thickness is approximately **1.58 mm**, compatible with a nominal 1.6 mm PCB construction.
+
+---
+
+## 3. Layer Philosophy
+
+The PCB follows this hierarchy:
+
+```text
+L1  HIGH-SPEED / CRITICAL SIGNALS
+L2  GND
+L3  SLOW SIGNALS / CONTROL
+L4  POWER
+L5  GND
+L6  SECONDARY / SLOW SIGNALS
+
+The fundamental principle is:
+
+Keep high-speed and sensitive signals on the outer layers, directly adjacent to a solid GND reference plane.
+
+L1 is therefore treated as the primary high-speed routing layer.
+
+L6 may be used for secondary and slow routing, with L5 providing the adjacent GND reference.
+
+4. L1 — High-Speed / Critical Signals
+
+L1 is the preferred layer for signals where signal integrity, edge rate, impedance or electromagnetic coupling is important.
+
+Preferred signals
+I²S
+SPI
+clocks
+USB
+Ethernet
+RF
+other high-speed digital interfaces
+critical audio clocks
+Examples
+ADAU1467 audio clocks
+I²S BCLK
+I²S LRCLK / WCLK
+I²S SDATA
+SPI clock and data
+12.288 MHz audio reference
+Ethernet PHY high-speed signals
+USB signals
+RF paths
+Rule
+
+High-speed signals should remain on L1 whenever practical.
+
+Avoid unnecessary layer changes.
+
+When a layer transition is unavoidable, provide an appropriate nearby GND stitching via to preserve the return-current path.
+
+5. L2 — Ground Plane
+
+L2 is the primary continuous GND reference plane.
+
+It should remain as continuous and uninterrupted as possible.
+
+L2 provides the primary return-current reference for signals routed on L1.
+
+Rules
+Do not route ordinary signals through L2.
+Avoid unnecessary splits or voids.
+Do not create isolated copper islands without a defined purpose.
+Provide GND vias close to layer-transition vias for high-speed signals.
+Maintain particularly clean GND under clock, I²S, SPI, USB and other fast L1 routing.
+6. L3 — Slow Signals / Control
+
+L3 is dedicated primarily to low-speed digital signals.
+
+Typical signals include:
+
+GPIO
+RESET
+ENABLE
+INTERRUPT
+power-control signals
+configuration signals
+low-speed control interfaces
+miscellaneous control lines
+other signals where controlled impedance is not required
+
+L3 should not be the preferred routing layer for high-speed signals.
+
+The relatively large dielectric spacing to L2 makes L3 less suitable than L1 for high-speed routing.
+
+7. L4 — Power Plane
+
+L4 is dedicated to power distribution.
+
+Typical power domains may include:
+
+3V3_DIG
+3V3_AUDIO
+1V8
+1V2
+other required regulated or switched rails
+
+Power domains shall be partitioned logically according to the power architecture.
+
+Power routing should avoid unnecessarily crossing sensitive signal regions.
+
+The power plane must not be treated as a generic signal-routing layer unless specifically required.
+
+8. L5 — Ground Plane
+
+L5 is the secondary continuous GND plane.
+
+It provides the primary reference for signals routed on L6.
+
+L5 should remain as continuous as practical.
+
+Together, L2 and L5 form the principal internal ground structure of the PCB.
+
+9. L6 — Secondary / Slow Routing
+
+L6 is intended primarily for:
+
+I²C
+GPIO
+slow control signals
+secondary communication lines
+connections to components located on the bottom side
+signals that do not require controlled impedance
+I²C
+
+I²C is preferentially routed on L6.
+
+This keeps I²C away from the critical high-speed routing on L1 and allows bottom-side components to be connected without consuming valuable TOP routing space.
+
+10. Communication-Signal Policy
+
+Communication signals are classified according to electrical speed and sensitivity rather than simply by protocol name.
+
+High-speed / critical
+
+Preferred on L1:
+
+I²S
+SPI
+clock signals
+USB
+Ethernet
+RF
+Low-speed / control
+
+Preferred on L3 or L6:
+
+I²C
+GPIO
+RESET
+ENABLE
+INTERRUPT
+power-control signals
+configuration interfaces
+Important exception
+
+The layer policy is architectural, not an absolute prohibition.
+
+A signal may use another layer when required by routing topology, component placement or congestion. However, deviations should be minimized and should have a clear reason.
+
+11. TOP-Layer Routing Policy
+
+L1 should not become a general-purpose routing layer.
+
+The preferred priority is:
+
+RF
+critical clocks
+I²S
+SPI
+USB / Ethernet high-speed signals
+other critical signals
+ordinary signals only when necessary
+
+Slow GPIO and control signals should not normally be routed on L1.
+
+This preserves the TOP layer for the signals that benefit most from the 0.10 mm L1–L2 geometry.
+
+12. Layer Transition Rules
+
+When a high-speed signal changes layer:
+
+minimize the number of transitions;
+avoid unnecessary vias;
+provide a nearby GND stitching via;
+preserve the return-current path;
+avoid crossing GND-plane discontinuities.
+
+For slow signals, layer transitions are less critical and may be used freely when useful for routing.
+
+13. Placement Implications
+
+Component placement shall support the layer architecture.
+
+L1 placement
+
+Critical components should be positioned so that their high-speed connections can be routed primarily on L1.
+
+Examples:
+
+ADAU1467
+audio codec
+Si4684
+BT1058
+Ethernet PHY
+USB interface
+clock sources
+Bottom placement
+
+Bottom-side components should preferentially connect using L6 where practical.
+
+I²C and other low-speed buses should therefore be planned around bottom-side placement where advantageous.
+
+14. Design Rule
+
+The following rule is the fundamental routing constraint for this PCB:
+
+L1 is for high-speed and critical signals. L2 is their primary GND reference. L3 is for slow control. L4 is power. L5 is GND. L6 is for secondary and slow routing.
+
+This rule should be applied consistently during placement and routing.
+
+15. Final Layer Assignment
+┌──────────────────────────────────────────┐
+│ L1  F.Cu   COMPONENTS / HIGH-SPEED       │
+├──────────────────────────────────────────┤
+│ L2  In1    GND                            │
+├──────────────────────────────────────────┤
+│ L3  In2    SLOW SIGNAL / CONTROL          │
+├──────────────────────────────────────────┤
+│ L4  In3    POWER                           │
+├──────────────────────────────────────────┤
+│ L5  In4    GND                             │
+├──────────────────────────────────────────┤
+│ L6  B.Cu   COMPONENTS / SLOW SIGNAL      │
+└──────────────────────────────────────────┘
+
+Architecture status: BASELINE — use as the routing reference for placement and PCB layout.

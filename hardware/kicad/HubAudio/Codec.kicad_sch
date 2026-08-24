@@ -6079,34 +6079,34 @@
 			)
 		)
 		(pin "4"
-			(uuid "1d561279-5490-43fe-b5a5-078ef5f04c5a")
+			(uuid "1d561279-5490-43fe-b5a5-078ef5f04c5b")
 		)
 		(pin "9"
-			(uuid "2ece6fba-dae7-428e-bb91-0c289c27a7bb")
+			(uuid "2ece6fba-dae7-428e-bb91-0c289c27a7bc")
 		)
 		(pin "10"
-			(uuid "d5899f36-276e-45e5-b238-bb01fea1211a")
+			(uuid "d5899f36-276e-45e5-b238-bb01fea1211b")
 		)
 		(pin "8"
-			(uuid "ab1f4550-c59f-4d60-aa42-7d5f87dcf193")
+			(uuid "ab1f4550-c59f-4d60-aa42-7d5f87dcf194")
 		)
 		(pin "1"
-			(uuid "478d14d6-9ab0-4e7c-8c7b-076d3da846f9")
+			(uuid "478d14d6-9ab0-4e7c-8c7b-076d3da846fa")
 		)
 		(pin "6"
-			(uuid "5df8b7c5-9e75-441d-82d5-8114fab1c353")
+			(uuid "5df8b7c5-9e75-441d-82d5-8114fab1c354")
 		)
 		(pin "3"
-			(uuid "b398acba-3b55-48a1-b5fe-f278c604af22")
+			(uuid "b398acba-3b55-48a1-b5fe-f278c604af23")
 		)
 		(pin "5"
-			(uuid "9d6e889f-5083-41f2-88ca-2d72260a625a")
+			(uuid "9d6e889f-5083-41f2-88ca-2d72260a625b")
 		)
 		(pin "2"
-			(uuid "5fca09d8-86e3-4a3b-a12f-37d8189ff3d7")
+			(uuid "5fca09d8-86e3-4a3b-a12f-37d8189ff3d8")
 		)
 		(pin "7"
-			(uuid "a6edcf88-aa86-455e-90a6-5b41ad7e3f70")
+			(uuid "a6edcf88-aa86-455e-90a6-5b41ad7e3f71")
 		)
 		(instances
 			(project "HubAudio"
@@ -6277,18 +6277,6 @@
 			)
 		)
 		(property "MF" "Texas Instruments"
-			(at 121.92 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "S070-3"
 			(at 121.92 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -8413,18 +8401,6 @@
 				(justify bottom)
 			)
 		)
-		(property "Package" "S070-3"
-			(at 217.17 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "MPN" "TPD2E007DCKR"
 			(at 217.17 110.49 0)
 			(hide yes)
@@ -9889,18 +9865,6 @@
 			)
 		)
 		(property "MF" "Texas Instruments"
-			(at 58.42 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "S070-3"
 			(at 58.42 182.88 0)
 			(hide yes)
 			(show_name no)
