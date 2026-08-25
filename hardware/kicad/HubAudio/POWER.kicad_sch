@@ -3347,18 +3347,6 @@
 		(uuid "4fd52b9e-b302-4bd8-92e8-c743bd03882c")
 	)
 	(junction
-		(at 116.84 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ff15cf5-3a85-4d51-81f1-b75b86cd30cd")
-	)
-	(junction
-		(at 125.73 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5209c772-6d8c-4ecc-b1a1-a9c933bf0844")
-	)
-	(junction
 		(at 45.72 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3479,12 +3467,6 @@
 		(uuid "9cc46874-e6b0-4b4b-b58b-5e17d93554af")
 	)
 	(junction
-		(at 125.73 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a3b9398a-ae70-4f2b-9aa3-30ecc99eab62")
-	)
-	(junction
 		(at 170.18 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3597,6 +3579,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f10074f2-b344-45da-a2c2-b861b2e8d1df")
+	)
+	(junction
+		(at 116.84 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc5ccc04-d7ff-419d-802b-3509c0342c85")
 	)
 	(junction
 		(at 127 26.67)
@@ -4060,16 +4048,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 99.06) (xy 125.73 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4195f3a7-bd8d-4773-81d6-ac35c598d333")
-	)
-	(wire
-		(pts
 			(xy 67.31 175.26) (xy 72.39 175.26)
 		)
 		(stroke
@@ -4197,16 +4175,6 @@
 			(type default)
 		)
 		(uuid "58c6b451-b1f2-4fb4-a729-0cdafa982ec0")
-	)
-	(wire
-		(pts
-			(xy 125.73 111.76) (xy 132.08 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a4952c4-7ee3-491d-9202-a715bd312d79")
 	)
 	(wire
 		(pts
@@ -4550,16 +4518,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 106.68) (xy 125.73 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b280e90-93e4-4406-9f4d-8dcc0d329998")
-	)
-	(wire
-		(pts
 			(xy 64.77 99.06) (xy 69.85 99.06)
 		)
 		(stroke
@@ -4780,7 +4738,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 99.06) (xy 132.08 99.06)
+			(xy 116.84 99.06) (xy 132.08 99.06)
 		)
 		(stroke
 			(width 0)
@@ -4910,7 +4868,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 111.76) (xy 125.73 111.76)
+			(xy 105.41 111.76) (xy 132.08 111.76)
 		)
 		(stroke
 			(width 0)
@@ -12585,97 +12543,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 125.73 102.87 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c62878b3-c22f-4bbe-85cf-72c2c26b38b1")
-		(property "Reference" "R14"
-			(at 123.698 103.124 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1M"
-			(at 126.492 102.87 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 127.508 102.87 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RC0805FR-071ML"
-			(at 125.73 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PNM" "RC0805FR-071ML"
-			(at 125.73 102.87 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4e6df822-05af-44b0-8690-5410ca459fd9")
-		)
-		(pin "2"
-			(uuid "8939e3f8-13f7-49d2-ab59-df7c558e1cee")
-		)
-		(instances
-			(project "HubAudio"
-				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
-					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 95.25 72.39 180)
 		(unit 1)
 		(body_style 1)
@@ -12936,7 +12803,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 116.84 110.49 180)
+		(at 120.65 106.68 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12946,7 +12813,7 @@
 		(dnp no)
 		(uuid "d1b77f4a-0cee-4e6b-ba91-111bd29d7f3c")
 		(property "Reference" "R13"
-			(at 114.808 110.744 90)
+			(at 120.904 108.712 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12956,7 +12823,7 @@
 			)
 		)
 		(property "Value" "180K"
-			(at 117.602 110.49 90)
+			(at 120.65 105.918 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12967,7 +12834,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 118.618 110.49 90)
+			(at 120.65 104.902 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12978,7 +12845,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 110.49 0)
+			(at 120.65 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12989,7 +12856,7 @@
 			)
 		)
 		(property "Description" "RC0805FR-07180KL"
-			(at 116.84 110.49 0)
+			(at 120.65 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13000,7 +12867,7 @@
 			)
 		)
 		(property "PNM" "RC0805FR-07180KL"
-			(at 116.84 110.49 90)
+			(at 120.65 106.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14797,7 +14664,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 116.84 114.3 0)
+		(at 124.46 106.68 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14807,7 +14674,7 @@
 		(dnp no)
 		(uuid "f148c937-93e6-486b-97db-fdeba022abbf")
 		(property "Reference" "#PWR019"
-			(at 116.84 120.65 0)
+			(at 130.81 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14818,7 +14685,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.634 117.348 0)
+			(at 128.27 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14828,7 +14695,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 114.3 0)
+			(at 124.46 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14839,7 +14706,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 114.3 0)
+			(at 124.46 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14850,7 +14717,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 114.3 0)
+			(at 124.46 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
