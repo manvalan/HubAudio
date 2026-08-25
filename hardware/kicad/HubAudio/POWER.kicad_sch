@@ -3227,6 +3227,12 @@
 		)
 	)
 	(junction
+		(at 185.42 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0342c20e-6ae2-42da-b963-d81d432ceb42")
+	)
+	(junction
 		(at 152.4 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3275,12 +3281,6 @@
 		(uuid "280e6184-cf6e-49de-84b5-4701f9fa047e")
 	)
 	(junction
-		(at 186.69 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2a16ce9d-9f53-4866-8dff-396717ad113e")
-	)
-	(junction
 		(at 208.28 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3323,16 +3323,16 @@
 		(uuid "3c377921-40b6-4c24-820e-3ffff1d994e0")
 	)
 	(junction
+		(at 185.42 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4033b325-aaf6-48be-be9d-6cee7dd2acdd")
+	)
+	(junction
 		(at 116.84 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41f28ff1-c65c-4143-a530-63dfae7da6d3")
-	)
-	(junction
-		(at 186.69 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "47a6a690-b122-4cf9-aa49-0ed7a3ff78fd")
 	)
 	(junction
 		(at 88.9 26.67)
@@ -3491,12 +3491,6 @@
 		(uuid "af5ebbf9-7643-4b2c-bc56-e5ccc5905d43")
 	)
 	(junction
-		(at 46.99 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "af81acfb-23d3-4649-b7cd-c04167ef6283")
-	)
-	(junction
 		(at 95.25 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3575,12 +3569,6 @@
 		(uuid "ee644516-1b57-4e44-965e-a243a82bcaa3")
 	)
 	(junction
-		(at 46.99 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f10074f2-b344-45da-a2c2-b861b2e8d1df")
-	)
-	(junction
 		(at 116.84 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3605,16 +3593,6 @@
 			(type default)
 		)
 		(uuid "0010e1bd-1b7e-4cb1-98de-32026c2279d9")
-	)
-	(wire
-		(pts
-			(xy 176.53 38.1) (xy 186.69 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00157680-8c25-499e-b5fe-2894c30dd941")
 	)
 	(wire
 		(pts
@@ -3818,23 +3796,23 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 30.48) (xy 46.99 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "123770eb-f34a-494e-87fd-f2e168ffd376")
-	)
-	(wire
-		(pts
-			(xy 35.56 33.02) (xy 46.99 33.02)
+			(xy 33.02 33.02) (xy 53.34 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "12513d98-84ab-4fa9-bbf6-60c7c630bef7")
+	)
+	(wire
+		(pts
+			(xy 185.42 38.1) (xy 195.58 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1444d511-5357-4d32-a3f9-d030d6512423")
 	)
 	(wire
 		(pts
@@ -3878,7 +3856,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 53.34) (xy 53.34 53.34)
+			(xy 33.02 53.34) (xy 53.34 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3998,26 +3976,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 50.8) (xy 46.99 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34325bf1-6584-4743-bd87-ecbc7f9eea14")
-	)
-	(wire
-		(pts
-			(xy 46.99 33.02) (xy 53.34 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a5c93e0-954d-4cc5-b324-5ed85fb0762a")
-	)
-	(wire
-		(pts
 			(xy 182.88 17.78) (xy 182.88 19.05)
 		)
 		(stroke
@@ -4128,7 +4086,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 35.56) (xy 53.34 35.56)
+			(xy 33.02 35.56) (xy 53.34 35.56)
 		)
 		(stroke
 			(width 0)
@@ -4308,16 +4266,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 30.48) (xy 39.37 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e1c77f6-7a35-449a-863e-2c158b4e97bd")
-	)
-	(wire
-		(pts
 			(xy 44.45 73.66) (xy 49.53 73.66)
 		)
 		(stroke
@@ -4428,7 +4376,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 38.1) (xy 195.58 38.1)
+			(xy 176.53 38.1) (xy 185.42 38.1)
 		)
 		(stroke
 			(width 0)
@@ -4518,6 +4466,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 45.72) (xy 190.5 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d427d4f-3afe-4a59-927d-3fb48fe73105")
+	)
+	(wire
+		(pts
 			(xy 64.77 99.06) (xy 69.85 99.06)
 		)
 		(stroke
@@ -4525,16 +4483,6 @@
 			(type default)
 		)
 		(uuid "8e9c3d9b-8398-4cf1-aaa6-018d9ddced91")
-	)
-	(wire
-		(pts
-			(xy 36.83 53.34) (xy 46.99 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9137978e-17ab-4e2f-80b2-cce6f088a8dc")
 	)
 	(wire
 		(pts
@@ -4565,16 +4513,6 @@
 			(type default)
 		)
 		(uuid "95b604e2-0f95-470a-b43c-713b19fd9e37")
-	)
-	(wire
-		(pts
-			(xy 186.69 45.72) (xy 190.5 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a41e6447-f99c-429e-85df-56645f206c50")
 	)
 	(wire
 		(pts
@@ -4628,7 +4566,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 38.1) (xy 53.34 38.1)
+			(xy 33.02 38.1) (xy 53.34 38.1)
 		)
 		(stroke
 			(width 0)
@@ -4675,16 +4613,6 @@
 			(type default)
 		)
 		(uuid "b526426b-9d74-4afe-9f0a-812e94bc4a34")
-	)
-	(wire
-		(pts
-			(xy 16.51 50.8) (xy 16.51 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5719744-5c1d-4aa4-bef4-fc46caab82de")
 	)
 	(wire
 		(pts
@@ -4898,7 +4826,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 48.26) (xy 53.34 48.26)
+			(xy 33.02 48.26) (xy 53.34 48.26)
 		)
 		(stroke
 			(width 0)
@@ -4935,16 +4863,6 @@
 			(type default)
 		)
 		(uuid "e191402c-b910-47c0-bd99-cbf8f4e6b2d8")
-	)
-	(wire
-		(pts
-			(xy 16.51 50.8) (xy 39.37 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1b4b787-1456-49cc-8954-44567d0ef8f3")
 	)
 	(wire
 		(pts
@@ -5028,7 +4946,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 45.72) (xy 186.69 45.72)
+			(xy 170.18 45.72) (xy 185.42 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5182,7 +5100,7 @@
 	)
 	(global_label "BQ25896_PSEL"
 		(shape input)
-		(at 36.83 48.26 180)
+		(at 33.02 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5192,7 +5110,7 @@
 		)
 		(uuid "2880b395-77f5-4676-8e83-ce3db57064e9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.5726 48.26 0)
+			(at 15.7626 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5302,7 +5220,7 @@
 	)
 	(global_label "BQ25896_PG#"
 		(shape input)
-		(at 36.83 53.34 180)
+		(at 33.02 53.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5312,7 +5230,7 @@
 		)
 		(uuid "874d7f78-aea3-4904-8aaa-fe4e585b5b5b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.4192 53.34 0)
+			(at 16.6092 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5398,7 +5316,7 @@
 	)
 	(global_label "I2C_SDA"
 		(shape input)
-		(at 27.94 35.56 180)
+		(at 33.02 35.56 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5408,7 +5326,7 @@
 		)
 		(uuid "af887916-5960-428d-aaa9-bab30b2335d7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 17.3348 35.56 0)
+			(at 22.4148 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5446,7 +5364,7 @@
 	)
 	(global_label "I2C_SCL"
 		(shape input)
-		(at 27.94 38.1 180)
+		(at 33.02 38.1 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5456,7 +5374,7 @@
 		)
 		(uuid "bf07539f-18aa-4559-af64-67accdf0ed6b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 17.3953 38.1 0)
+			(at 22.4753 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5470,7 +5388,7 @@
 	)
 	(global_label "BQ25896_INT"
 		(shape input)
-		(at 35.56 33.02 180)
+		(at 33.02 33.02 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5480,7 +5398,7 @@
 		)
 		(uuid "fe0f4f5e-9ac2-4dc9-a888-e28fa21deb3a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.0563 33.02 0)
+			(at 17.5163 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5513,6 +5431,98 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 195.58 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "02be4feb-b8eb-4adf-849f-5f81acad8eb7")
+		(property "Reference" "R20"
+			(at 193.04 51.054 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 195.58 50.546 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 193.802 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RC0805FR-071KL"
+			(at 195.58 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "RC0805FR-071KL"
+			(at 195.58 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "341a3e78-5bda-4280-b233-7a74aef7d981")
+		)
+		(pin "2"
+			(uuid "20dcefc0-8256-4cb3-b446-c9b6076c2896")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
+					(reference "R20")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -5588,97 +5598,6 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 195.58 49.53 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0761f14d-3066-4379-9c5b-a15206f9113c")
-		(property "Reference" "R11"
-			(at 193.548 49.784 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10K"
-			(at 196.342 49.53 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 197.358 49.53 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RC0805FR-0710KL"
-			(at 195.58 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PNM" "RC0805FR-0710KL"
-			(at 195.58 49.53 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "11f75b53-8116-46bf-9e65-9f488a3a8462")
-		)
-		(pin "2"
-			(uuid "35d30ae8-0c62-4aad-9744-db30ae67f7e3")
-		)
-		(instances
-			(project "HubAudio"
-				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
-					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -6925,7 +6844,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 129.54 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9360,83 +9279,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VD")
-		(at 16.51 49.53 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "73bddff0-c988-4175-af91-991c4169da2d")
-		(property "Reference" "#PWR0203"
-			(at 16.51 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3V3_DIGITAL"
-			(at 16.51 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 16.51 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 16.51 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VD\""
-			(at 16.51 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dcf2660e-b8c4-4bb8-9667-f0e1db13ad05")
-		)
-		(instances
-			(project "HubAudio"
-				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
-					(reference "#PWR0203")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 67.31 179.07 0)
 		(unit 1)
@@ -10688,6 +10530,97 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 185.42 41.91 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9b430ddf-cc55-4708-8de5-335c56c1b7a9")
+		(property "Reference" "R11"
+			(at 183.388 42.164 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10m"
+			(at 186.182 41.91 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 187.198 41.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ERJ-8CWFR010V"
+			(at 185.42 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PNM" "ERJ-8CWFR010V"
+			(at 185.42 41.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5142c51b-5d05-4a87-bc97-3f519a65159c")
+		)
+		(pin "2"
+			(uuid "70290d79-b052-4714-ad57-4fed91872a92")
+		)
+		(instances
+			(project "HubAudio"
+				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -12205,83 +12138,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VD")
-		(at 35.56 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bbc48432-66b4-482c-9d5a-17e36eda9b6c")
-		(property "Reference" "#PWR0217"
-			(at 35.56 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3V3_DIGITAL"
-			(at 35.56 26.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VD\""
-			(at 35.56 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5d9b0ca2-c5b2-4eec-89b4-c459aee86261")
-		)
-		(instances
-			(project "HubAudio"
-				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
-					(reference "#PWR0217")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 102.87 64.77 0)
 		(unit 1)
@@ -12887,97 +12743,6 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 186.69 41.91 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d3e1c397-f207-4a37-8ec9-ab75158f766e")
-		(property "Reference" "R9"
-			(at 184.658 42.164 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10m"
-			(at 187.452 41.91 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 188.468 41.91 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "WSL1206R0100FEA"
-			(at 186.69 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PNM" "WSL1206R0100FEA"
-			(at 186.69 41.91 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "37751af9-5a80-4d91-9890-369222b979d0")
-		)
-		(pin "2"
-			(uuid "a8be7af2-1f5d-4930-a980-61cc4efa9622")
-		)
-		(instances
-			(project "HubAudio"
-				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
-					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -13696,97 +13461,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 43.18 30.48 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "dfadd8d1-fba3-4868-a058-6df9bc214f53")
-		(property "Reference" "R1"
-			(at 42.926 28.448 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10K"
-			(at 43.18 31.242 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 43.18 32.258 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RC0805FR-0710KL"
-			(at 43.18 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PNM" "RC0805FR-0710KL"
-			(at 43.18 30.48 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e3757da7-71e0-41f8-a715-beba3ad240c0")
-		)
-		(pin "2"
-			(uuid "e2f20cc8-e771-4c53-b4a1-5cdb623fe371")
-		)
-		(instances
-			(project "HubAudio"
-				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VBUS")
 		(at 29.21 25.4 90)
 		(unit 1)
@@ -14382,97 +14056,6 @@
 			(project "HubAudio"
 				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
 					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 43.18 50.8 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "efebd4cb-54f3-4170-a0f0-98fa08b67bb6")
-		(property "Reference" "R3"
-			(at 42.926 48.768 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10K"
-			(at 43.18 51.562 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 43.18 52.578 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RC0805FR-0710KL"
-			(at 43.18 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PNM" "RC0805FR-0710KL"
-			(at 43.18 50.8 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d24a5da1-2bb9-4eab-aca7-ab4e3b3460fc")
-		)
-		(pin "2"
-			(uuid "3ea3fbf4-9533-4c6a-9c4c-334072443f72")
-		)
-		(instances
-			(project "HubAudio"
-				(path "/841d8022-3a94-443e-97aa-a99a12889684/be5acd16-8a33-4b43-9869-78b6acaaceab"
-					(reference "R3")
 					(unit 1)
 				)
 			)
